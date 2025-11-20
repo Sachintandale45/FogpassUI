@@ -38,7 +38,7 @@ Item {
             Layout.fillWidth: true
             onAccepted: {
                 // push DemoPage and pass the entered name and the parent window
-                if (parentWindow) parentWindow.stack.push(Qt.resolvedUrl("DemoPage.qml"), { userName: text, parentWindow: parentWindow })
+                if (parentWindow) parentWindow.stack.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/DemoPage.qml"), { userName: text, parentWindow: parentWindow })
             }
         }
 
@@ -50,7 +50,7 @@ Item {
                 id: enterBtn
                 text: "Enter"
                 Layout.minimumWidth: 100
-                onClicked: { if (parentWindow) parentWindow.stack.push(Qt.resolvedUrl("DemoPage.qml"), { userName: nameField.text, parentWindow: parentWindow }) }
+                onClicked: { if (parentWindow) parentWindow.stack.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/DemoPage.qml"), { userName: nameField.text, parentWindow: parentWindow }) }
             }
 
             Button {

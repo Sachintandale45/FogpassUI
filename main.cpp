@@ -3,7 +3,7 @@
 
 int main(int argc, char *argv[])
 {
-    qputenv("QT_IM_MODULE", QByteArray("qtvirtualkeyboard"));
+    // Do not force the virtual keyboard module here; avoid runtime import warnings
 
     QGuiApplication app(argc, argv);
 

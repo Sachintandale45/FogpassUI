@@ -30,7 +30,7 @@ ApplicationWindow {
         // Some QML parsers may reject an object-literal for `initialItem`.
         // Instead, push the initial page with properties once the component is ready.
         Component.onCompleted: {
-            stackView.push(Qt.resolvedUrl("content/WelcomePage.qml"), { parentWindow: appWindow })
+            stackView.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/WelcomePage.qml"), { parentWindow: appWindow })
         }
     }
 
@@ -41,6 +41,8 @@ ApplicationWindow {
         anchors.top: parent.top
         anchors.right: parent.right
         anchors.margins: 10
-        onClicked: stackView.push(Qt.resolvedUrl("content/DemoPage.qml"), { parentWindow: appWindow, userName: "" })
+        // only show when stack has exactly the welcome page (depth == 1)
+        visible: stackView.depth === 1
+        onClicked: stackView.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/DemoPage.qml"), { parentWindow: appWindow, userName: "" })
     }
 }
