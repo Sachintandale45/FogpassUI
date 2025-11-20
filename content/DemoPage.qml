@@ -34,15 +34,39 @@ Item {
                 anchors.margins: 12
                 spacing: 8
 
-                Text { text: "Location: Pune"; color: parentWindow ? parentWindow.textColor : "#000000"; font.pointSize: 14 }
-                Text { text: "Distance: 1200 meter"; color: parentWindow ? parentWindow.textColor : "#000000"; font.pointSize: 14 }
+                Text {
+                    text: "Location: Pune"
+                    color: parentWindow ? parentWindow.textColor : "#000000"
+                    font.pointSize: 14
+                }
+                Text {
+                    text: "Distance: 1200 meter"
+                    color: parentWindow ? parentWindow.textColor : "#000000"
+                    font.pointSize: 14
+                }
 
                 RowLayout {
                     Layout.fillWidth: true
                     spacing: 8
-                    Text { text: "Battery:"; color: parentWindow ? parentWindow.textColor : "#000000" }
-                    ProgressBar { id: batteryBar; value: 0.78; from: 0; to: 1; Layout.preferredWidth: 200; background: Rectangle { color: parentWindow ? Qt.darker(parentWindow.panelColor,1.1) : "#ccc" }; contentItem: null }
-                    Text { id: batteryText; text: Math.round(batteryBar.value*100) + "%"; color: parentWindow ? parentWindow.textColor : "#000000" }
+                    Text {
+                        text: "Battery:"
+                        color: parentWindow ? parentWindow.textColor : "#000000"
+                    }
+                    ProgressBar {
+                        id: batteryBar
+                        value: 0.78
+                        from: 0
+                        to: 1
+                        Layout.preferredWidth: 200
+                        background: Rectangle {
+                            color: parentWindow ? Qt.darker(parentWindow.panelColor, 1.1) : "#ccc"
+                        }
+                    }
+                    Text {
+                        id: batteryText
+                        text: Math.round(batteryBar.value*100) + "%"
+                        color: parentWindow ? parentWindow.textColor : "#000000"
+                    }
                 }
             }
         }
@@ -54,18 +78,35 @@ Item {
             Button {
                 text: "Back"
                 Layout.minimumWidth: 80
-                background: Rectangle { color: parentWindow ? Qt.darker(parentWindow.panelColor, 1.05) : "#ddd"; radius: 6 }
-                contentItem: Text { text: control.text; anchors.centerIn: parent; color: parentWindow ? parentWindow.textColor : "#000000" }
+                background: Rectangle {
+                    color: parentWindow ? Qt.darker(parentWindow.panelColor, 1.05) : "#ddd"
+                    radius: 6
+                }
+                contentItem: Text {
+                    text: control.text
+                    anchors.centerIn: parent
+                    color: parentWindow ? parentWindow.textColor : "#000000"
+                }
                 onClicked: { if (parentWindow) parentWindow.stack.pop() }
             }
 
             Button {
                 text: "Refresh"
                 Layout.minimumWidth: 80
-                background: Rectangle { color: parentWindow ? parentWindow.primaryColor : "#4fc3f7"; radius: 6 }
-                contentItem: Text { text: control.text; anchors.centerIn: parent; color: parentWindow ? parentWindow.textColor : "#000000" }
+                background: Rectangle {
+                    color: parentWindow ? parentWindow.primaryColor : "#4fc3f7"
+                    radius: 6
+                }
+                contentItem: Text {
+                    text: control.text
+                    anchors.centerIn: parent
+                    color: parentWindow ? parentWindow.textColor : "#000000"
+                }
                 onClicked: {
-                    if (batteryBar.value > 0.7) batteryBar.value = 0.45; else batteryBar.value = 0.78
+                    if (batteryBar.value > 0.7)
+                        batteryBar.value = 0.45
+                    else
+                        batteryBar.value = 0.78
                     batteryText.text = Math.round(batteryBar.value*100) + "%"
                 }
             }
@@ -73,5 +114,8 @@ Item {
     }
 
     // local progress control referenced above
-    ProgressBar { id: progress; visible: false }
+    ProgressBar {
+        id: progress
+        visible: false
+    }
 }
