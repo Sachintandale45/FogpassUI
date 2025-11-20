@@ -12,6 +12,15 @@ ApplicationWindow {
     visible: true
     title: qsTr("Basic UI")
 
+    // Simple color theme properties
+    property color bgColor: "#1e1e2e"
+    property color panelColor: "#252535"
+    property color primaryColor: "#4fc3f7"
+    property color textColor: "#ffffff"
+    property color mutedTextColor: "#cfcfe0"
+    // apply window background
+    color: bgColor
+
     ColumnLayout {
         anchors.fill: parent
         anchors.margins: 12
@@ -24,12 +33,20 @@ ApplicationWindow {
             horizontalAlignment: Text.AlignHCenter
             Layout.alignment: Qt.AlignHCenter
             wrapMode: Text.WordWrap
+            color: textColor
         }
 
         TextField {
             id: nameField
             placeholderText: "Your name"
             Layout.fillWidth: true
+            background: Rectangle {
+                color: panelColor
+                radius: 6
+                border.color: Qt.lighter(panelColor, 1.2)
+            }
+            color: textColor
+            placeholderTextColor: mutedTextColor
         }
 
         RowLayout {
@@ -44,6 +61,11 @@ ApplicationWindow {
                     else
                         label.text = "Hello!"
                 }
+                background: Rectangle {
+                    color: primaryColor
+                    radius: 6
+                }
+                contentItem: Text { text: control.text; color: textColor; horizontalAlignment: Text.AlignHCenter; verticalAlignment: Text.AlignVCenter }
             }
 
             Button {
@@ -52,6 +74,11 @@ ApplicationWindow {
                     nameField.text = ""
                     label.text = "Welcome — enter your name and press Greet"
                 }
+                background: Rectangle {
+                    color: Qt.darker(panelColor, 1.05)
+                    radius: 6
+                }
+                contentItem: Text { text: control.text; color: textColor; horizontalAlignment: Text.AlignHCenter; verticalAlignment: Text.AlignVCenter }
             }
         }
 
@@ -62,18 +89,26 @@ ApplicationWindow {
             value: 14
             Layout.fillWidth: true
             onValueChanged: label.font.pointSize = value
+            background: Rectangle { height: 6; radius: 3; color: Qt.darker(panelColor, 1.05) }
+            handle: Rectangle { width: 14; height: 14; radius: 7; color: primaryColor }
         }
 
         CheckBox {
             id: toggleBold
             text: "Bold label"
             onCheckedChanged: label.font.bold = checked
+            contentItem: Text { text: control.text; color: textColor }
         }
 
         Button {
             text: "Quit"
             onClicked: Qt.quit()
             Layout.alignment: Qt.AlignRight
+            background: Rectangle {
+                color: Qt.darker(panelColor, 1.05)
+                radius: 6
+            }
+            contentItem: Text { text: control.text; color: textColor }
         }
     }
 }
