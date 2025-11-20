@@ -6,6 +6,8 @@ Item {
     id: demoRoot
     anchors.fill: parent
 
+    // window passed in from Main.qml or WelcomePage
+    property Item parentWindow: null
     property string userName: ""
 
     ColumnLayout {
@@ -16,14 +18,14 @@ Item {
         Text {
             text: userName.length > 0 ? "Hello, " + userName + "!" : "Hello!"
             font.pointSize: 18
-            color: appWindow.textColor
+            color: parentWindow ? parentWindow.textColor : "#000000"
             horizontalAlignment: Text.AlignHCenter
             Layout.alignment: Qt.AlignHCenter
         }
 
         Rectangle {
             Layout.fillWidth: true
-            color: appWindow.panelColor
+            color: parentWindow ? parentWindow.panelColor : "#ffffff"
             radius: 8
             height: 120
 
@@ -32,15 +34,15 @@ Item {
                 anchors.margins: 12
                 spacing: 8
 
-                Text { text: "Location: Pune"; color: appWindow.textColor; font.pointSize: 14 }
-                Text { text: "Distance: 1200 meter"; color: appWindow.textColor; font.pointSize: 14 }
+                Text { text: "Location: Pune"; color: parentWindow ? parentWindow.textColor : "#000000"; font.pointSize: 14 }
+                Text { text: "Distance: 1200 meter"; color: parentWindow ? parentWindow.textColor : "#000000"; font.pointSize: 14 }
 
                 RowLayout {
                     Layout.fillWidth: true
                     spacing: 8
-                    Text { text: "Battery:"; color: appWindow.textColor }
-                    ProgressBar { value: 0.78; from: 0; to: 1; Layout.preferredWidth: 200; background: Rectangle { color: Qt.darker(appWindow.panelColor,1.1) }; contentItem: null }
-                    Text { text: "78%"; color: appWindow.textColor }
+                    Text { text: "Battery:"; color: parentWindow ? parentWindow.textColor : "#000000" }
+                    ProgressBar { id: batteryBar; value: 0.78; from: 0; to: 1; Layout.preferredWidth: 200; background: Rectangle { color: parentWindow ? Qt.darker(parentWindow.panelColor,1.1) : "#ccc" }; contentItem: null }
+                    Text { id: batteryText; text: Math.round(batteryBar.value*100) + "%"; color: parentWindow ? parentWindow.textColor : "#000000" }
                 }
             }
         }
@@ -52,21 +54,19 @@ Item {
             Button {
                 text: "Back"
                 Layout.minimumWidth: 80
-                background: Rectangle { color: Qt.darker(appWindow.panelColor, 1.05); radius: 6 }
-                contentItem: Text { text: control.text; anchors.centerIn: parent; color: appWindow.textColor }
-                onClicked: appWindow.stack.pop()
+                background: Rectangle { color: parentWindow ? Qt.darker(parentWindow.panelColor, 1.05) : "#ddd"; radius: 6 }
+                contentItem: Text { text: control.text; anchors.centerIn: parent; color: parentWindow ? parentWindow.textColor : "#000000" }
+                onClicked: { if (parentWindow) parentWindow.stack.pop() }
             }
 
             Button {
                 text: "Refresh"
                 Layout.minimumWidth: 80
-                background: Rectangle { color: appWindow.primaryColor; radius: 6 }
-                contentItem: Text { text: control.text; anchors.centerIn: parent; color: appWindow.textColor }
+                background: Rectangle { color: parentWindow ? parentWindow.primaryColor : "#4fc3f7"; radius: 6 }
+                contentItem: Text { text: control.text; anchors.centerIn: parent; color: parentWindow ? parentWindow.textColor : "#000000" }
                 onClicked: {
-                    // demo: toggle battery value for visual feedback
-                    // In a real app you'd read sensor data here
-                    // This toggles between 78% and 45%
-                    if (progress.value > 0.7) progress.value = 0.45; else progress.value = 0.78
+                    if (batteryBar.value > 0.7) batteryBar.value = 0.45; else batteryBar.value = 0.78
+                    batteryText.text = Math.round(batteryBar.value*100) + "%"
                 }
             }
         }

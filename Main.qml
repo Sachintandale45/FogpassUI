@@ -27,6 +27,6 @@ ApplicationWindow {
     StackView {
         id: stackView
         anchors.fill: parent
-        initialItem: "content/WelcomePage.qml"
+        initialItem: { item: Qt.resolvedUrl("content/WelcomePage.qml"), properties: { parentWindow: appWindow } }
     }
 }

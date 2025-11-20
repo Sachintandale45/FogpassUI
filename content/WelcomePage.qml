@@ -6,6 +6,9 @@ Item {
     id: root
     anchors.fill: parent
 
+    // window passed in from Main.qml when pushed/loaded
+    property Item parentWindow: null
+
     ColumnLayout {
         anchors.fill: parent
         anchors.margins: 16
@@ -15,7 +18,7 @@ Item {
             id: welcomeText
             text: "Welcome — enter your name and press Enter"
             font.pointSize: 18
-            color: appWindow.textColor
+            color: parentWindow ? parentWindow.textColor : "#000000"
             horizontalAlignment: Text.AlignHCenter
             Layout.alignment: Qt.AlignHCenter
             wrapMode: Text.WordWrap
@@ -25,12 +28,12 @@ Item {
             id: nameField
             placeholderText: "Your name"
             Layout.fillWidth: true
-            background: Rectangle { color: appWindow.panelColor; radius: 6 }
-            color: appWindow.textColor
-            placeholderTextColor: appWindow.mutedTextColor
+            background: Rectangle { color: parentWindow ? parentWindow.panelColor : "#ffffff"; radius: 6 }
+            color: parentWindow ? parentWindow.textColor : "#000000"
+            placeholderTextColor: parentWindow ? parentWindow.mutedTextColor : "#888888"
             onAccepted: {
-                // push DemoPage and pass the entered name
-                appWindow.stack.push("content/DemoPage.qml", { userName: text })
+                // push DemoPage and pass the entered name and the parent window
+                if (parentWindow) parentWindow.stack.push(Qt.resolvedUrl("content/DemoPage.qml"), { userName: text, parentWindow: parentWindow })
             }
         }
 
@@ -41,17 +44,17 @@ Item {
             Button {
                 text: "Enter"
                 Layout.minimumWidth: 100
-                background: Rectangle { color: appWindow.primaryColor; radius: 6 }
-                contentItem: Text { text: control.text; anchors.centerIn: parent; color: appWindow.textColor }
-                onClicked: appWindow.stack.push("content/DemoPage.qml", { userName: nameField.text })
+                background: Rectangle { color: parentWindow ? parentWindow.primaryColor : "#4fc3f7"; radius: 6 }
+                contentItem: Text { text: control.text; anchors.centerIn: parent; color: parentWindow ? parentWindow.textColor : "#000000" }
+                onClicked: { if (parentWindow) parentWindow.stack.push(Qt.resolvedUrl("content/DemoPage.qml"), { userName: nameField.text, parentWindow: parentWindow }) }
             }
 
             Button {
                 text: "Quit"
                 Layout.alignment: Qt.AlignRight
                 Layout.minimumWidth: 80
-                background: Rectangle { color: Qt.darker(appWindow.panelColor, 1.05); radius: 6 }
-                contentItem: Text { text: control.text; anchors.centerIn: parent; color: appWindow.textColor }
+                background: Rectangle { color: parentWindow ? Qt.darker(parentWindow.panelColor, 1.05) : "#ddd"; radius: 6 }
+                contentItem: Text { text: control.text; anchors.centerIn: parent; color: parentWindow ? parentWindow.textColor : "#000000" }
                 onClicked: Qt.quit()
             }
         }
