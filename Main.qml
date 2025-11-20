@@ -54,6 +54,7 @@ ApplicationWindow {
             spacing: 8
 
             Button {
+                id: greetBtn
                 text: "Greet"
                 onClicked: {
                     if (nameField.text.length > 0)
@@ -65,10 +66,12 @@ ApplicationWindow {
                     color: primaryColor
                     radius: 6
                 }
-                contentItem: Text { text: control.text; color: textColor; horizontalAlignment: Text.AlignHCenter; verticalAlignment: Text.AlignVCenter }
+                minimumWidth: 80
+                contentItem: Text { text: greetBtn.text; anchors.centerIn: parent; color: textColor }
             }
 
             Button {
+                id: clearBtn
                 text: "Clear"
                 onClicked: {
                     nameField.text = ""
@@ -78,7 +81,8 @@ ApplicationWindow {
                     color: Qt.darker(panelColor, 1.05)
                     radius: 6
                 }
-                contentItem: Text { text: control.text; color: textColor; horizontalAlignment: Text.AlignHCenter; verticalAlignment: Text.AlignVCenter }
+                minimumWidth: 80
+                contentItem: Text { text: clearBtn.text; anchors.centerIn: parent; color: textColor }
             }
         }
 
@@ -101,14 +105,16 @@ ApplicationWindow {
         }
 
         Button {
+            id: quitBtn
             text: "Quit"
             onClicked: Qt.quit()
             Layout.alignment: Qt.AlignRight
+            minimumWidth: 80
             background: Rectangle {
                 color: Qt.darker(panelColor, 1.05)
                 radius: 6
             }
-            contentItem: Text { text: control.text; color: textColor }
+            contentItem: Text { text: quitBtn.text; anchors.centerIn: parent; color: textColor }
         }
     }
 }
