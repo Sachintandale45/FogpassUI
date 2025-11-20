@@ -17,7 +17,7 @@ Item {
 
         Text { text: "Main Menu"; font.pointSize: 20; horizontalAlignment: Text.AlignHCenter; Layout.alignment: Qt.AlignHCenter }
 
-        Button { text: "User Menu"; Layout.minimumWidth: 240; onClicked: if (parentWindow && parentWindow.stack) parentWindow.stack.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/PlaceholderPage.qml"), { title: "User Menu", parentWindow: parentWindow }) }
+        Button { text: "User Menu"; Layout.minimumWidth: 240; onClicked: if (parentWindow && parentWindow.stack) parentWindow.stack.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/UserMenu.qml"), { parentWindow: parentWindow }) }
         Button { text: "Test Menu"; Layout.minimumWidth: 240; onClicked: if (parentWindow && parentWindow.stack) parentWindow.stack.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/PlaceholderPage.qml"), { title: "Test Menu", parentWindow: parentWindow }) }
         Button { text: "USB Menu"; Layout.minimumWidth: 240; onClicked: if (parentWindow && parentWindow.stack) parentWindow.stack.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/PlaceholderPage.qml"), { title: "USB Menu", parentWindow: parentWindow }) }
         Button { text: "GPS Simulation"; Layout.minimumWidth: 240; onClicked: if (parentWindow && parentWindow.stack) parentWindow.stack.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/PlaceholderPage.qml"), { title: "GPS Simulation", parentWindow: parentWindow }) }
