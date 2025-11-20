@@ -66,7 +66,7 @@ ApplicationWindow {
                     color: primaryColor
                     radius: 6
                 }
-                minimumWidth: 80
+                Layout.minimumWidth: 80
                 contentItem: Text { text: greetBtn.text; anchors.centerIn: parent; color: textColor }
             }
 
@@ -81,7 +81,7 @@ ApplicationWindow {
                     color: Qt.darker(panelColor, 1.05)
                     radius: 6
                 }
-                minimumWidth: 80
+                Layout.minimumWidth: 80
                 contentItem: Text { text: clearBtn.text; anchors.centerIn: parent; color: textColor }
             }
         }
@@ -109,7 +109,7 @@ ApplicationWindow {
             text: "Quit"
             onClicked: Qt.quit()
             Layout.alignment: Qt.AlignRight
-            minimumWidth: 80
+            Layout.minimumWidth: 80
             background: Rectangle {
                 color: Qt.darker(panelColor, 1.05)
                 radius: 6
