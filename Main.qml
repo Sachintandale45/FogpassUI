@@ -7,8 +7,8 @@ import QtQuick.Layouts 1.15
 ApplicationWindow {
     id: appWindow
     flags: Qt.Window | Qt.CustomizeWindowHint | Qt.WindowTitleHint
-    width: 400
-    height: 320
+    width: 800
+    height: 600
     visible: true
     title: qsTr("Basic UI")
 
@@ -30,19 +30,9 @@ ApplicationWindow {
         // Some QML parsers may reject an object-literal for `initialItem`.
         // Instead, push the initial page with properties once the component is ready.
         Component.onCompleted: {
-            stackView.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/WelcomePage.qml"), { parentWindow: appWindow })
+            // start at the splash page
+            stackView.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/SplashPage.qml"), { parentWindow: appWindow })
         }
     }
-
-    // quick access button to show DemoPage directly
-    Button {
-        id: showDemoBtn
-        text: "Show Demo"
-        anchors.top: parent.top
-        anchors.right: parent.right
-        anchors.margins: 10
-        // only show when stack has exactly the welcome page (depth == 1)
-        visible: stackView.depth === 1
-        onClicked: stackView.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/DemoPage.qml"), { parentWindow: appWindow, userName: "" })
-    }
+    // (No top-right demo button in final flow)
 }
