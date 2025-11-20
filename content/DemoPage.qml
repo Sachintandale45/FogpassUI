@@ -4,11 +4,19 @@ import QtQuick.Layouts 1.15
 
 Item {
     id: demoRoot
-    anchors.fill: parent
+    // ensure page sizes match the StackView container
+    width: parent ? parent.width : 400
+    height: parent ? parent.height : 320
 
     // window passed in from Main.qml or WelcomePage
     property var parentWindow: null
     property string userName: ""
+
+    // opaque background so this page fully covers any previous page
+    Rectangle {
+        anchors.fill: parent
+        color: "#ffffff"
+    }
 
     ColumnLayout {
         anchors.fill: parent
@@ -25,7 +33,7 @@ Item {
 
         Rectangle {
             Layout.fillWidth: true
-            color: parentWindow ? parentWindow.panelColor : "#ffffff"
+            color: "#f5f5f5"
             radius: 8
             height: 120
 
@@ -47,8 +55,17 @@ Item {
                     Layout.fillWidth: true
                     spacing: 8
                     Text { text: "Battery:" }
-                    ProgressBar { id: batteryBar; value: 0.78; from: 0; to: 1; Layout.preferredWidth: 200 }
-                    Text { id: batteryText; text: Math.round(batteryBar.value*100) + "%" }
+                    ProgressBar {
+                        id: batteryBar
+                        value: 0.78
+                        from: 0
+                        to: 1
+                        Layout.preferredWidth: 200
+                    }
+                    Text {
+                        id: batteryText
+                        text: Math.round(batteryBar.value*100) + "%"
+                    }
                 }
             }
         }
@@ -61,15 +78,6 @@ Item {
                 id: backBtn
                 text: "Back"
                 Layout.minimumWidth: 80
-                background: Rectangle {
-                    color: parentWindow ? Qt.darker(parentWindow.panelColor, 1.05) : "#ddd"
-                    radius: 6
-                }
-                contentItem: Text {
-                    text: backBtn.text
-                    anchors.centerIn: parent
-                    color: parentWindow ? parentWindow.textColor : "#000000"
-                }
                 onClicked: { if (parentWindow) parentWindow.stack.pop() }
             }
 
@@ -77,15 +85,6 @@ Item {
                 id: refreshBtn
                 text: "Refresh"
                 Layout.minimumWidth: 80
-                background: Rectangle {
-                    color: parentWindow ? parentWindow.primaryColor : "#4fc3f7"
-                    radius: 6
-                }
-                contentItem: Text {
-                    text: refreshBtn.text
-                    anchors.centerIn: parent
-                    color: parentWindow ? parentWindow.textColor : "#000000"
-                }
                 onClicked: {
                     if (batteryBar.value > 0.7)
                         batteryBar.value = 0.45

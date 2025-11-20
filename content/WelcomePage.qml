@@ -4,10 +4,18 @@ import QtQuick.Layouts 1.15
 
 Item {
     id: root
-    anchors.fill: parent
+    // ensure page sizes match the StackView container
+    width: parent ? parent.width : 400
+    height: parent ? parent.height : 320
 
     // window passed in from Main.qml when pushed/loaded
     property var parentWindow: null
+
+    // opaque background so this page fully covers any previous page
+    Rectangle {
+        anchors.fill: parent
+        color: "#ffffff"
+    }
 
     ColumnLayout {
         anchors.fill: parent
