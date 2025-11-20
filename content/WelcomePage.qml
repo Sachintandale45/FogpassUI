@@ -28,9 +28,6 @@ Item {
             id: nameField
             placeholderText: "Your name"
             Layout.fillWidth: true
-            background: Rectangle { color: parentWindow ? parentWindow.panelColor : "#ffffff"; radius: 6 }
-            color: parentWindow ? parentWindow.textColor : "#000000"
-            placeholderTextColor: parentWindow ? parentWindow.mutedTextColor : "#888888"
             onAccepted: {
                 // push DemoPage and pass the entered name and the parent window
                 if (parentWindow) parentWindow.stack.push(Qt.resolvedUrl("DemoPage.qml"), { userName: text, parentWindow: parentWindow })
@@ -41,12 +38,10 @@ Item {
             Layout.fillWidth: true
             spacing: 8
 
-                Button {
+            Button {
                 id: enterBtn
                 text: "Enter"
                 Layout.minimumWidth: 100
-                background: Rectangle { color: parentWindow ? parentWindow.primaryColor : "#4fc3f7"; radius: 6 }
-                contentItem: Text { text: enterBtn.text; anchors.centerIn: parent; color: parentWindow ? parentWindow.textColor : "#000000" }
                 onClicked: { if (parentWindow) parentWindow.stack.push(Qt.resolvedUrl("DemoPage.qml"), { userName: nameField.text, parentWindow: parentWindow }) }
             }
 
@@ -55,8 +50,6 @@ Item {
                 text: "Quit"
                 Layout.alignment: Qt.AlignRight
                 Layout.minimumWidth: 80
-                background: Rectangle { color: parentWindow ? Qt.darker(parentWindow.panelColor, 1.05) : "#ddd"; radius: 6 }
-                contentItem: Text { text: quitBtn.text; anchors.centerIn: parent; color: parentWindow ? parentWindow.textColor : "#000000" }
                 onClicked: Qt.quit()
             }
         }

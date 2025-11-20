@@ -36,37 +36,19 @@ Item {
 
                 Text {
                     text: "Location: Pune"
-                    color: parentWindow ? parentWindow.textColor : "#000000"
                     font.pointSize: 14
                 }
                 Text {
                     text: "Distance: 1200 meter"
-                    color: parentWindow ? parentWindow.textColor : "#000000"
                     font.pointSize: 14
                 }
 
                 RowLayout {
                     Layout.fillWidth: true
                     spacing: 8
-                    Text {
-                        text: "Battery:"
-                        color: parentWindow ? parentWindow.textColor : "#000000"
-                    }
-                    ProgressBar {
-                        id: batteryBar
-                        value: 0.78
-                        from: 0
-                        to: 1
-                        Layout.preferredWidth: 200
-                        background: Rectangle {
-                            color: parentWindow ? Qt.darker(parentWindow.panelColor, 1.1) : "#ccc"
-                        }
-                    }
-                    Text {
-                        id: batteryText
-                        text: Math.round(batteryBar.value*100) + "%"
-                        color: parentWindow ? parentWindow.textColor : "#000000"
-                    }
+                    Text { text: "Battery:" }
+                    ProgressBar { id: batteryBar; value: 0.78; from: 0; to: 1; Layout.preferredWidth: 200 }
+                    Text { id: batteryText; text: Math.round(batteryBar.value*100) + "%" }
                 }
             }
         }
