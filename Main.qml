@@ -27,6 +27,10 @@ ApplicationWindow {
     StackView {
         id: stackView
         anchors.fill: parent
-        initialItem: { item: Qt.resolvedUrl("content/WelcomePage.qml"), properties: { parentWindow: appWindow } }
+        // Some QML parsers may reject an object-literal for `initialItem`.
+        // Instead, push the initial page with properties once the component is ready.
+        Component.onCompleted: {
+            stackView.push(Qt.resolvedUrl("content/WelcomePage.qml"), { parentWindow: appWindow })
+        }
     }
 }
