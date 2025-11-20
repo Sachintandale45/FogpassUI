@@ -21,100 +21,12 @@ ApplicationWindow {
     // apply window background
     color: bgColor
 
-    ColumnLayout {
+    // expose stack to pages
+    property alias stack: stackView
+
+    StackView {
+        id: stackView
         anchors.fill: parent
-        anchors.margins: 12
-        spacing: 8
-
-        Text {
-            id: label
-            text: "Welcome — enter your name and press Greet"
-            font.pointSize: 14
-            horizontalAlignment: Text.AlignHCenter
-            Layout.alignment: Qt.AlignHCenter
-            wrapMode: Text.WordWrap
-            color: textColor
-        }
-
-        TextField {
-            id: nameField
-            placeholderText: "Your name"
-            Layout.fillWidth: true
-            background: Rectangle {
-                color: panelColor
-                radius: 6
-                border.color: Qt.lighter(panelColor, 1.2)
-            }
-            color: textColor
-            placeholderTextColor: mutedTextColor
-        }
-
-        RowLayout {
-            Layout.fillWidth: true
-            spacing: 8
-
-            Button {
-                id: greetBtn
-                text: "Greet"
-                onClicked: {
-                    if (nameField.text.length > 0)
-                        label.text = "Hello, " + nameField.text + "!"
-                    else
-                        label.text = "Hello!"
-                }
-                background: Rectangle {
-                    color: primaryColor
-                    radius: 6
-                }
-                Layout.minimumWidth: 80
-                contentItem: Text { text: greetBtn.text; anchors.centerIn: parent; color: textColor }
-            }
-
-            Button {
-                id: clearBtn
-                text: "Clear"
-                onClicked: {
-                    nameField.text = ""
-                    label.text = "Welcome — enter your name and press Greet"
-                }
-                background: Rectangle {
-                    color: Qt.darker(panelColor, 1.05)
-                    radius: 6
-                }
-                Layout.minimumWidth: 80
-                contentItem: Text { text: clearBtn.text; anchors.centerIn: parent; color: textColor }
-            }
-        }
-
-        Slider {
-            id: sizeSlider
-            from: 10
-            to: 30
-            value: 14
-            Layout.fillWidth: true
-            onValueChanged: label.font.pointSize = value
-            background: Rectangle { height: 6; radius: 3; color: Qt.darker(panelColor, 1.05) }
-            handle: Rectangle { width: 14; height: 14; radius: 7; color: primaryColor }
-        }
-
-        CheckBox {
-            id: toggleBold
-            text: "Bold label"
-            onCheckedChanged: label.font.bold = checked
-            contentItem: Text { text: control.text; color: textColor }
-        }
-
-        Button {
-            id: quitBtn
-            text: "Quit"
-            onClicked: Qt.quit()
-            Layout.alignment: Qt.AlignRight
-            Layout.minimumWidth: 80
-            background: Rectangle {
-                color: Qt.darker(panelColor, 1.05)
-                radius: 6
-            }
-            contentItem: Text { text: quitBtn.text; anchors.centerIn: parent; color: textColor }
-        }
+        initialItem: "content/WelcomePage.qml"
     }
 }
