@@ -4,6 +4,7 @@ import QtQuick.Layouts 1.15
 
 Item {
     id: root
+    property var parentWindow
     width: parent ? parent.width : 800
     height: parent ? parent.height : 600
 
@@ -16,10 +17,10 @@ Item {
 
         Text { text: "Main Menu"; font.pointSize: 20; horizontalAlignment: Text.AlignHCenter; Layout.alignment: Qt.AlignHCenter }
 
-        Button { text: "User Menu"; Layout.minimumWidth: 240; onClicked: root.parent.stack.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/PlaceholderPage.qml"), { title: "User Menu", parentWindow: root.parent }) }
-        Button { text: "Test Menu"; Layout.minimumWidth: 240; onClicked: root.parent.stack.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/PlaceholderPage.qml"), { title: "Test Menu", parentWindow: root.parent }) }
-        Button { text: "USB Menu"; Layout.minimumWidth: 240; onClicked: root.parent.stack.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/PlaceholderPage.qml"), { title: "USB Menu", parentWindow: root.parent }) }
-        Button { text: "GPS Simulation"; Layout.minimumWidth: 240; onClicked: root.parent.stack.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/PlaceholderPage.qml"), { title: "GPS Simulation", parentWindow: root.parent }) }
+        Button { text: "User Menu"; Layout.minimumWidth: 240; onClicked: if (parentWindow && parentWindow.stack) parentWindow.stack.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/PlaceholderPage.qml"), { title: "User Menu", parentWindow: parentWindow }) }
+        Button { text: "Test Menu"; Layout.minimumWidth: 240; onClicked: if (parentWindow && parentWindow.stack) parentWindow.stack.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/PlaceholderPage.qml"), { title: "Test Menu", parentWindow: parentWindow }) }
+        Button { text: "USB Menu"; Layout.minimumWidth: 240; onClicked: if (parentWindow && parentWindow.stack) parentWindow.stack.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/PlaceholderPage.qml"), { title: "USB Menu", parentWindow: parentWindow }) }
+        Button { text: "GPS Simulation"; Layout.minimumWidth: 240; onClicked: if (parentWindow && parentWindow.stack) parentWindow.stack.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/PlaceholderPage.qml"), { title: "GPS Simulation", parentWindow: parentWindow }) }
 
     }
 }

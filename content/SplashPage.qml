@@ -4,6 +4,7 @@ import QtQuick.Layouts 1.15
 
 Item {
     id: root
+    property var parentWindow
     width: parent ? parent.width : 800
     height: parent ? parent.height : 600
 
@@ -33,8 +34,8 @@ Item {
             Layout.alignment: Qt.AlignHCenter
             Layout.minimumWidth: 140
             onClicked: {
-                if (root.parent && root.parent.stack) {
-                    root.parent.stack.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/MenuPage.qml"), { parentWindow: root.parent })
+                if (parentWindow && parentWindow.stack) {
+                    parentWindow.stack.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/MenuPage.qml"), { parentWindow: parentWindow })
                 }
             }
         }
