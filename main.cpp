@@ -1,5 +1,7 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <QQmlContext>
+#include "backend/backendmanager.h"
 
 int main(int argc, char *argv[])
 {
@@ -8,6 +10,9 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
+    BackendManager backend;
+    backend.start();
+    engine.rootContext()->setContextProperty("backend", &backend);
     QObject::connect(
         &engine,
         &QQmlApplicationEngine::objectCreationFailed,

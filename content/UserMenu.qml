@@ -5,7 +5,7 @@ import QtQuick.Layouts 1.15
 Item {
     id: root
     property var parentWindow
-    property int batteryLevel: 84
+    // batteryLevel is provided by the C++ backend as `backend.batteryLevel`
     width: parent ? parent.width : 800
     height: parent ? parent.height : 600
 
@@ -20,7 +20,7 @@ Item {
         color: "transparent"
 
         Text { text: "User Menu"; anchors.verticalCenter: parent.verticalCenter; anchors.left: parent.left; anchors.leftMargin: 16; font.pointSize: 20 }
-        Text { id: batteryText; text: "Battery: " + batteryLevel + "%"; anchors.verticalCenter: parent.verticalCenter; anchors.right: parent.right; anchors.rightMargin: 16 }
+        Text { id: batteryText; text: "Battery: " + (typeof backend !== 'undefined' ? backend.batteryLevel : "--") + "%"; anchors.verticalCenter: parent.verticalCenter; anchors.right: parent.right; anchors.rightMargin: 16 }
     }
 
     ColumnLayout {

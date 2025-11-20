@@ -4,12 +4,13 @@ project(trial1 VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Quick)
+find_package(Qt6 REQUIRED COMPONENTS Quick Qml)
 
 qt_standard_project_setup(REQUIRES 6.8)
 
 qt_add_executable(apptrial1
     main.cpp
+    src/backend/backendmanager.cpp
 )
 
 qt_add_qml_module(apptrial1
@@ -30,8 +31,10 @@ set_target_properties(apptrial1 PROPERTIES
 )
 
 target_link_libraries(apptrial1
-    PRIVATE Qt6::Quick
+    PRIVATE Qt6::Quick Qt6::Qml
 )
+
+target_include_directories(apptrial1 PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 include(GNUInstallDirs)
 install(TARGETS apptrial1
