@@ -33,7 +33,7 @@ Item {
             placeholderTextColor: parentWindow ? parentWindow.mutedTextColor : "#888888"
             onAccepted: {
                 // push DemoPage and pass the entered name and the parent window
-                if (parentWindow) parentWindow.stack.push(Qt.resolvedUrl("content/DemoPage.qml"), { userName: text, parentWindow: parentWindow })
+                if (parentWindow) parentWindow.stack.push(Qt.resolvedUrl("DemoPage.qml"), { userName: text, parentWindow: parentWindow })
             }
         }
 
@@ -41,13 +41,13 @@ Item {
             Layout.fillWidth: true
             spacing: 8
 
-            Button {
+                Button {
                 id: enterBtn
                 text: "Enter"
                 Layout.minimumWidth: 100
                 background: Rectangle { color: parentWindow ? parentWindow.primaryColor : "#4fc3f7"; radius: 6 }
                 contentItem: Text { text: enterBtn.text; anchors.centerIn: parent; color: parentWindow ? parentWindow.textColor : "#000000" }
-                onClicked: { if (parentWindow) parentWindow.stack.push(Qt.resolvedUrl("content/DemoPage.qml"), { userName: nameField.text, parentWindow: parentWindow }) }
+                onClicked: { if (parentWindow) parentWindow.stack.push(Qt.resolvedUrl("DemoPage.qml"), { userName: nameField.text, parentWindow: parentWindow }) }
             }
 
             Button {
