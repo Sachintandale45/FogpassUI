@@ -33,4 +33,14 @@ ApplicationWindow {
             stackView.push(Qt.resolvedUrl("content/WelcomePage.qml"), { parentWindow: appWindow })
         }
     }
+
+    // quick access button to show DemoPage directly
+    Button {
+        id: showDemoBtn
+        text: "Show Demo"
+        anchors.top: parent.top
+        anchors.right: parent.right
+        anchors.margins: 10
+        onClicked: stackView.push(Qt.resolvedUrl("content/DemoPage.qml"), { parentWindow: appWindow, userName: "" })
+    }
 }
