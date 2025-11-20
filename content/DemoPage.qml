@@ -7,7 +7,7 @@ Item {
     anchors.fill: parent
 
     // window passed in from Main.qml or WelcomePage
-    property Item parentWindow: null
+    property var parentWindow: null
     property string userName: ""
 
     ColumnLayout {
@@ -76,6 +76,7 @@ Item {
             spacing: 8
 
             Button {
+                id: backBtn
                 text: "Back"
                 Layout.minimumWidth: 80
                 background: Rectangle {
@@ -83,7 +84,7 @@ Item {
                     radius: 6
                 }
                 contentItem: Text {
-                    text: control.text
+                    text: backBtn.text
                     anchors.centerIn: parent
                     color: parentWindow ? parentWindow.textColor : "#000000"
                 }
@@ -91,6 +92,7 @@ Item {
             }
 
             Button {
+                id: refreshBtn
                 text: "Refresh"
                 Layout.minimumWidth: 80
                 background: Rectangle {
@@ -98,7 +100,7 @@ Item {
                     radius: 6
                 }
                 contentItem: Text {
-                    text: control.text
+                    text: refreshBtn.text
                     anchors.centerIn: parent
                     color: parentWindow ? parentWindow.textColor : "#000000"
                 }

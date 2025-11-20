@@ -7,7 +7,7 @@ Item {
     anchors.fill: parent
 
     // window passed in from Main.qml when pushed/loaded
-    property Item parentWindow: null
+    property var parentWindow: null
 
     ColumnLayout {
         anchors.fill: parent
@@ -42,19 +42,21 @@ Item {
             spacing: 8
 
             Button {
+                id: enterBtn
                 text: "Enter"
                 Layout.minimumWidth: 100
                 background: Rectangle { color: parentWindow ? parentWindow.primaryColor : "#4fc3f7"; radius: 6 }
-                contentItem: Text { text: control.text; anchors.centerIn: parent; color: parentWindow ? parentWindow.textColor : "#000000" }
+                contentItem: Text { text: enterBtn.text; anchors.centerIn: parent; color: parentWindow ? parentWindow.textColor : "#000000" }
                 onClicked: { if (parentWindow) parentWindow.stack.push(Qt.resolvedUrl("content/DemoPage.qml"), { userName: nameField.text, parentWindow: parentWindow }) }
             }
 
             Button {
+                id: quitBtn
                 text: "Quit"
                 Layout.alignment: Qt.AlignRight
                 Layout.minimumWidth: 80
                 background: Rectangle { color: parentWindow ? Qt.darker(parentWindow.panelColor, 1.05) : "#ddd"; radius: 6 }
-                contentItem: Text { text: control.text; anchors.centerIn: parent; color: parentWindow ? parentWindow.textColor : "#000000" }
+                contentItem: Text { text: quitBtn.text; anchors.centerIn: parent; color: parentWindow ? parentWindow.textColor : "#000000" }
                 onClicked: Qt.quit()
             }
         }
