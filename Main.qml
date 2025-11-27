@@ -31,7 +31,7 @@ ApplicationWindow {
         // Instead, push the initial page with properties once the component is ready.
         Component.onCompleted: {
             // start at the splash page
-            stackView.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/SplashPage.qml"), { parentWindow: appWindow })
+            stackView.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/IntroPage.qml"), { parentWindow: appWindow })
         }
     }
     // (No top-right demo button in final flow)

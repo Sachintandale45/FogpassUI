@@ -16,6 +16,12 @@ qt_add_qml_module(apptrial1
     URI trial1
     QML_FILES
         Main.qml
+        RESOURCES
+QML_FILES content/button.qml content/DemoPage.qml content/WelcomePage.qml
+QML_FILES content/PlaceholderPage.qml content/SplashPage.qml content/WelcomePage.qml
+QML_FILES content/MenuPage.qml
+QML_FILES content/IntroPage.qml
+QML_FILES content/UserMenu.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
