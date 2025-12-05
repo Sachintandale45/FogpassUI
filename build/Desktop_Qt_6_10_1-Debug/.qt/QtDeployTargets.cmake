@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_apptrial1_FILE /home/sachin/projects/FogpassUI/build/Desktop_Qt_6_10_1-Debug/apptrial1)
+set(__QT_DEPLOY_TARGET_apptrial1_TYPE EXECUTABLE)

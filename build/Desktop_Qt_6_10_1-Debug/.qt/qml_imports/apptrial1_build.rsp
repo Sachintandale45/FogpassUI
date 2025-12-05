@@ -1,0 +1,15 @@
+-rootPath
+/home/sachin/projects/FogpassUI
+-cmake-output
+-output-file
+/home/sachin/projects/FogpassUI/build/Desktop_Qt_6_10_1-Debug/.qt/qml_imports/apptrial1_build.cmake
+-importPath
+/home/sachin/projects/FogpassUI/build/Desktop_Qt_6_10_1-Debug/trial1
+-importPath
+/home/sachin/projects/FogpassUI/build/Desktop_Qt_6_10_1-Debug
+-importPath
+/home/sachin/Qt/6.10.1/gcc_64/qml
+-qrcFiles
+/home/sachin/projects/FogpassUI/build/Desktop_Qt_6_10_1-Debug/.qt/rcc/qmake_trial1.qrc
+/home/sachin/projects/FogpassUI/build/Desktop_Qt_6_10_1-Debug/.qt/rcc/apptrial1_raw_qml_0.qrc
+/home/sachin/projects/FogpassUI/build/Desktop_Qt_6_10_1-Debug/.qt/rcc/apptrial1_raw_qml_0_extra_qmldirs.qrc
