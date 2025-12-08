@@ -26,7 +26,7 @@ Item {
 
         Text {
             id: warningText
-            text: "FogPASS is only a non-fail safe aid. LP to follow extant operating procedures. Press ENTER"
+            text: "FogPASS is only a non-fail safe aid. LP to follow extant operating procedures. \n Press ENTER"
             font.pointSize: 18
             color: "#ffffff"
             wrapMode: Text.WordWrap

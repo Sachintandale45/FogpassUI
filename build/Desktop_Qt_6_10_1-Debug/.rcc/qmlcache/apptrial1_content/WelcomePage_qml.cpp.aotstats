@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 0,
                             "column": 12,
-                            "durationMicroseconds": 200,
+                            "durationMicroseconds": 5621,
                             "functionName": "width",
                             "line": 8,
                             "message": ""
@@ -16,7 +16,7 @@
                         {
                             "codegenResult": 0,
                             "column": 13,
-                            "durationMicroseconds": 151,
+                            "durationMicroseconds": 164,
                             "functionName": "height",
                             "line": 9,
                             "message": ""
@@ -24,7 +24,7 @@
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 4297,
+                            "durationMicroseconds": 65,
                             "functionName": "fill",
                             "line": 16,
                             "message": ""
@@ -32,7 +32,7 @@
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 75,
+                            "durationMicroseconds": 59,
                             "functionName": "fill",
                             "line": 21,
                             "message": ""
@@ -40,7 +40,7 @@
                         {
                             "codegenResult": 2,
                             "column": 20,
-                            "durationMicroseconds": 86,
+                            "durationMicroseconds": 83,
                             "functionName": "color",
                             "line": 29,
                             "message": "Cannot access value for name parentWindow"
@@ -48,7 +48,7 @@
                         {
                             "codegenResult": 0,
                             "column": 34,
-                            "durationMicroseconds": 11969,
+                            "durationMicroseconds": 77,
                             "functionName": "horizontalAlignment",
                             "line": 30,
                             "message": ""
@@ -56,7 +56,7 @@
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 67,
+                            "durationMicroseconds": 73,
                             "functionName": "wrapMode",
                             "line": 32,
                             "message": ""
@@ -64,7 +64,7 @@
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 74,
+                            "durationMicroseconds": 71,
                             "functionName": "alignment",
                             "line": 31,
                             "message": ""
@@ -96,7 +96,7 @@
                         {
                             "codegenResult": 0,
                             "column": 35,
-                            "durationMicroseconds": 68,
+                            "durationMicroseconds": 89,
                             "functionName": "alignment",
                             "line": 59,
                             "message": ""

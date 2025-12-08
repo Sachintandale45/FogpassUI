@@ -7,8 +7,8 @@ import QtQuick.Layouts 1.15
 ApplicationWindow {
     id: appWindow
     flags: Qt.Window | Qt.CustomizeWindowHint | Qt.WindowTitleHint
-    width: 800
-    height: 600
+    width: 1024
+    height: 720
     visible: true
     title: qsTr("Basic UI")
 
