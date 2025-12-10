@@ -11,5 +11,8 @@ IntroPage 254.0 content/IntroPage.qml
 UserMenu 254.0 content/UserMenu.qml
 TestMenuPage 254.0 content/TestMenuPage.qml
 GPSSimulationPage 254.0 content/GPSSimulationPage.qml
+HeaderBar 254.0 content/HeaderBar.qml
+ModePlaceholder 254.0 content/ModePlaceholder.qml
+VolumeControl 254.0 content/VolumeControl.qml
 depends QtQuick
 

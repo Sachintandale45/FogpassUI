@@ -5,6 +5,7 @@ import QtQuick.Layouts 1.15
 Item {
     id: root
     property var parentWindow
+    property int volumeLevel: 75
     // batteryLevel is provided by the C++ backend as `backend.batteryLevel`
     width: parent ? parent.width : 800
     height: parent ? parent.height : 600
@@ -19,46 +20,90 @@ Item {
         }
     }
 
-    Rectangle {
-        id: header
+    HeaderBar {
         anchors.top: parent.top
-        anchors.left: parent.left
         anchors.right: parent.right
-        height: 56
-        color: "transparent"
-
-        Text { text: "User Menu"; anchors.verticalCenter: parent.verticalCenter; anchors.left: parent.left; anchors.leftMargin: 16; font.pointSize: 20; color: "#ffffff"; font.bold: true }
-        Text { id: batteryText; text: "Battery: " + (typeof backend !== 'undefined' ? backend.batteryLevel : "--") + "%"; anchors.verticalCenter: parent.verticalCenter; anchors.right: parent.right; anchors.rightMargin: 16; color: "#ffffff"; font.bold: true }
+        anchors.margins: 16
+        batteryLevel: typeof backend !== 'undefined' ? backend.batteryLevel : 0
+        volumeLevel: root.volumeLevel
     }
 
     ColumnLayout {
-        anchors.top: header.bottom
+        anchors.top: parent.top
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.margins: 24
-        spacing: 12
+        anchors.topMargin: 80
+        spacing: 14
 
-        RowLayout { Layout.fillWidth: true; spacing: 8
-            Text { text: "pune"; font.pointSize: 18; color: "#ffffff" }
-            Item { Layout.fillWidth: true }
-            Text { text: "1200 meter"; font.pointSize: 18; color: "#ffffff" }
+        Text {
+            text: "User Menu"
+            font.pointSize: 24
+            font.bold: true
+            color: "#ffffff"
+            horizontalAlignment: Text.AlignLeft
+            Layout.alignment: Qt.AlignLeft
         }
 
-        RowLayout { Layout.fillWidth: true; spacing: 8
-            Text { text: "bridge"; font.pointSize: 18; color: "#ffffff" }
-            Item { Layout.fillWidth: true }
-            Text { text: "1800 meter"; font.pointSize: 18; color: "#ffffff" }
-        }
+        ColumnLayout {
+            spacing: 12
+            Layout.fillWidth: true
 
-        RowLayout { Layout.fillWidth: true; spacing: 8
-            Text { text: "nashik"; font.pointSize: 18; color: "#ffffff" }
-            Item { Layout.fillWidth: true }
-            Text { text: "2500 meter"; font.pointSize: 18; color: "#ffffff" }
+            function stackRef() {
+                var s = StackView.view || (parentWindow && parentWindow.stack);
+                if (!s) console.warn("UserMenu: no stack available");
+                return s;
+            }
+
+            function go(title) {
+                var s = stackRef();
+                if (s) {
+                    s.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/ModePlaceholder.qml"), { parentWindow: StackView.view || parentWindow, title: title })
+                }
+            }
+
+            function goVolume() {
+                var s = stackRef();
+                if (s) {
+                    s.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/VolumeControl.qml"), { parentWindow: StackView.view || parentWindow })
+                }
+            }
+
+            Button { text: "1) Auto Mode"; Layout.minimumWidth: 260; Layout.minimumHeight: 46; font.pointSize: 18; font.bold: true; Layout.alignment: Qt.AlignLeft
+                background: Rectangle { radius: 8; color: parent.pressed ? "#ffffff" : "#ffffff"; opacity: parent.pressed ? 0.9 : 1.0; border.width: 2; border.color: "#333333" }
+                contentItem: Text { text: parent.text; font: parent.font; color: "#333333"; horizontalAlignment: Text.AlignLeft; verticalAlignment: Text.AlignVCenter; anchors.left: parent.left; anchors.leftMargin: 12 }
+                onClicked: go("Auto Mode")
+            }
+            Button { text: "2) Manual Mode"; Layout.minimumWidth: 260; Layout.minimumHeight: 46; font.pointSize: 18; font.bold: true; Layout.alignment: Qt.AlignLeft
+                background: Rectangle { radius: 8; color: parent.pressed ? "#ffffff" : "#ffffff"; opacity: parent.pressed ? 0.9 : 1.0; border.width: 2; border.color: "#333333" }
+                contentItem: Text { text: parent.text; font: parent.font; color: "#333333"; horizontalAlignment: Text.AlignLeft; verticalAlignment: Text.AlignVCenter; anchors.left: parent.left; anchors.leftMargin: 12 }
+                onClicked: go("Manual Mode")
+            }
+            Button { text: "3) Weather Mode"; Layout.minimumWidth: 260; Layout.minimumHeight: 46; font.pointSize: 18; font.bold: true; Layout.alignment: Qt.AlignLeft
+                background: Rectangle { radius: 8; color: parent.pressed ? "#ffffff" : "#ffffff"; opacity: parent.pressed ? 0.9 : 1.0; border.width: 2; border.color: "#333333" }
+                contentItem: Text { text: parent.text; font: parent.font; color: "#333333"; horizontalAlignment: Text.AlignLeft; verticalAlignment: Text.AlignVCenter; anchors.left: parent.left; anchors.leftMargin: 12 }
+                onClicked: go("Weather Mode")
+            }
+            Button { text: "4) Adjust Volume"; Layout.minimumWidth: 260; Layout.minimumHeight: 46; font.pointSize: 18; font.bold: true; Layout.alignment: Qt.AlignLeft
+                background: Rectangle { radius: 8; color: parent.pressed ? "#ffffff" : "#ffffff"; opacity: parent.pressed ? 0.9 : 1.0; border.width: 2; border.color: "#333333" }
+                contentItem: Text { text: parent.text; font: parent.font; color: "#333333"; horizontalAlignment: Text.AlignLeft; verticalAlignment: Text.AlignVCenter; anchors.left: parent.left; anchors.leftMargin: 12 }
+                onClicked: goVolume()
+            }
+            Button { text: "5) Adjust Brightness"; Layout.minimumWidth: 260; Layout.minimumHeight: 46; font.pointSize: 18; font.bold: true; Layout.alignment: Qt.AlignLeft
+                background: Rectangle { radius: 8; color: parent.pressed ? "#ffffff" : "#ffffff"; opacity: parent.pressed ? 0.9 : 1.0; border.width: 2; border.color: "#333333" }
+                contentItem: Text { text: parent.text; font: parent.font; color: "#333333"; horizontalAlignment: Text.AlignLeft; verticalAlignment: Text.AlignVCenter; anchors.left: parent.left; anchors.leftMargin: 12 }
+                onClicked: go("Adjust Brightness")
+            }
+            Button { text: "6) Display All Route"; Layout.minimumWidth: 260; Layout.minimumHeight: 46; font.pointSize: 18; font.bold: true; Layout.alignment: Qt.AlignLeft
+                background: Rectangle { radius: 8; color: parent.pressed ? "#ffffff" : "#ffffff"; opacity: parent.pressed ? 0.9 : 1.0; border.width: 2; border.color: "#333333" }
+                contentItem: Text { text: parent.text; font: parent.font; color: "#333333"; horizontalAlignment: Text.AlignLeft; verticalAlignment: Text.AlignVCenter; anchors.left: parent.left; anchors.leftMargin: 12 }
+                onClicked: go("Display All Route")
+            }
         }
 
         Item { Layout.fillHeight: true }
 
-        RowLayout { Layout.alignment: Qt.AlignHCenter; spacing: 12
+        RowLayout { Layout.alignment: Qt.AlignLeft; spacing: 12
             Button { 
                 text: "Back"; 
                 Layout.minimumWidth: 200
@@ -79,7 +124,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                 }
-                onClicked: if (parentWindow && parentWindow.stack) parentWindow.stack.pop() 
+                onClicked: { var s = StackView.view || (parentWindow && parentWindow.stack); if (s) s.pop(); else console.warn("UserMenu: no stack on back"); }
             }
         }
     }

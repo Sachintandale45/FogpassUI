@@ -15,3 +15,6 @@
 /qt/qml/trial1/content/UserMenu.qml
 /qt/qml/trial1/content/TestMenuPage.qml
 /qt/qml/trial1/content/GPSSimulationPage.qml
+/qt/qml/trial1/content/HeaderBar.qml
+/qt/qml/trial1/content/ModePlaceholder.qml
+/qt/qml/trial1/content/VolumeControl.qml

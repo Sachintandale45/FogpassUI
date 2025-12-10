@@ -18,20 +18,59 @@ Item {
         }
     }
 
-    Text {
-        id: welcomeText
-        text: "Welcome"
-        anchors.centerIn: parent
-        font.pointSize: 36
-        font.bold: true
-        color: "#ffffff"
-        horizontalAlignment: Text.AlignHCenter
-        verticalAlignment: Text.AlignVCenter
+    ColumnLayout {
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.top: parent.top
+        anchors.topMargin: 110
+        spacing: 10
+        width: parent ? parent.width * 0.8 : 640
+
+        Text {
+            id: titleText
+            text: "FOGPASS & Neuromotion Systems"
+            font.pointSize: 36
+            font.bold: true
+            color: "#ffffff"
+            horizontalAlignment: Text.AlignHCenter
+            Layout.alignment: Qt.AlignHCenter
+        }
+
+        Text {
+            text: "H/W VERSION: 1.0.0"
+            font.pointSize: 22
+            color: "#ffffff"
+            horizontalAlignment: Text.AlignLeft
+            Layout.alignment: Qt.AlignLeft
+        }
+
+        Text {
+            text: "S/W VERSION: 1.0.0"
+            font.pointSize: 22
+            color: "#ffffff"
+            horizontalAlignment: Text.AlignLeft
+            Layout.alignment: Qt.AlignLeft
+        }
+
+        Text {
+            text: "DB VERSION: 1.0.0"
+            font.pointSize: 22
+            color: "#ffffff"
+            horizontalAlignment: Text.AlignLeft
+            Layout.alignment: Qt.AlignLeft
+        }
+
+        Text {
+            text: "UNIT ID: 001"
+            font.pointSize: 22
+            color: "#ffffff"
+            horizontalAlignment: Text.AlignLeft
+            Layout.alignment: Qt.AlignLeft
+        }
     }
 
     Timer {
         id: autoTimer
-        interval: 4000
+        interval: 5000
         repeat: false
         running: true
         onTriggered: {

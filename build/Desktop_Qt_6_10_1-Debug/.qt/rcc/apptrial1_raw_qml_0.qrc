@@ -11,6 +11,9 @@
     <file alias="content/UserMenu.qml">/home/sachin/projects/FogpassUI/content/UserMenu.qml</file>
     <file alias="content/TestMenuPage.qml">/home/sachin/projects/FogpassUI/content/TestMenuPage.qml</file>
     <file alias="content/GPSSimulationPage.qml">/home/sachin/projects/FogpassUI/content/GPSSimulationPage.qml</file>
+    <file alias="content/HeaderBar.qml">/home/sachin/projects/FogpassUI/content/HeaderBar.qml</file>
+    <file alias="content/ModePlaceholder.qml">/home/sachin/projects/FogpassUI/content/ModePlaceholder.qml</file>
+    <file alias="content/VolumeControl.qml">/home/sachin/projects/FogpassUI/content/VolumeControl.qml</file>
   </qresource>
 </RCC>
 

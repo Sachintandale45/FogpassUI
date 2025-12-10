@@ -8,6 +8,12 @@ Item {
     width: parent ? parent.width : 800
     height: parent ? parent.height : 600
 
+    function stackRef() {
+        var s = StackView.view || (parentWindow && parentWindow.stack);
+        if (!s) console.warn("MenuPage: no stack available for navigation");
+        return s;
+    }
+
     // Beautiful gradient background with mixed colors
     Rectangle {
         anchors.fill: parent
@@ -51,7 +57,10 @@ Item {
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
             }
-            onClicked: if (parentWindow && parentWindow.stack) parentWindow.stack.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/UserMenu.qml"), { parentWindow: parentWindow }) 
+            onClicked: {
+                var s = root.stackRef();
+                if (s) s.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/UserMenu.qml"), { parentWindow: StackView.view || parentWindow });
+            }
         }
         Button { 
             text: "Test Menu"; 
@@ -73,7 +82,10 @@ Item {
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
             }
-            onClicked: if (parentWindow && parentWindow.stack) parentWindow.stack.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/TestMenuPage.qml"), { parentWindow: parentWindow }) 
+            onClicked: {
+                var s = root.stackRef();
+                if (s) s.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/TestMenuPage.qml"), { parentWindow: StackView.view || parentWindow });
+            }
         }
         Button { 
             text: "USB Menu"; 
@@ -95,7 +107,10 @@ Item {
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
             }
-            onClicked: if (parentWindow && parentWindow.stack) parentWindow.stack.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/PlaceholderPage.qml"), { title: "USB Menu", parentWindow: parentWindow }) 
+            onClicked: {
+                var s = root.stackRef();
+                if (s) s.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/PlaceholderPage.qml"), { title: "USB Menu", parentWindow: StackView.view || parentWindow });
+            }
         }
         Button { 
             text: "GPS Simulation"; 
@@ -117,7 +132,10 @@ Item {
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
             }
-            onClicked: if (parentWindow && parentWindow.stack) parentWindow.stack.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/GPSSimulationPage.qml"), { parentWindow: parentWindow }) 
+            onClicked: {
+                var s = root.stackRef();
+                if (s) s.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/GPSSimulationPage.qml"), { parentWindow: StackView.view || parentWindow });
+            }
         }
 
     }

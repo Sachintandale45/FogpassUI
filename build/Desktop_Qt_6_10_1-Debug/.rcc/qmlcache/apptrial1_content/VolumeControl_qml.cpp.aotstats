@@ -1,0 +1,183 @@
+{
+    "formatRevision": 1,
+    "modules": [
+        {
+            "moduleFiles": [
+                {
+                    "entries": [
+                        {
+                            "codegenResult": 0,
+                            "column": 12,
+                            "durationMicroseconds": 399,
+                            "functionName": "width",
+                            "line": 8,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 13,
+                            "durationMicroseconds": 272,
+                            "functionName": "height",
+                            "line": 9,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 5,
+                            "durationMicroseconds": 365,
+                            "functionName": "stackRef",
+                            "line": 20,
+                            "message": "Cannot load property stack from (component in /home/sachin/projects/FogpassUI/content/VolumeControl.qml)::parentWindow with type QVariant."
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 23,
+                            "durationMicroseconds": 117,
+                            "functionName": "fill",
+                            "line": 12,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 16,
+                            "durationMicroseconds": 347,
+                            "functionName": "width",
+                            "line": 27,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 27,
+                            "durationMicroseconds": 102,
+                            "functionName": "centerIn",
+                            "line": 25,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 34,
+                            "durationMicroseconds": 123,
+                            "functionName": "horizontalAlignment",
+                            "line": 34,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 122,
+                            "functionName": "alignment",
+                            "line": 35,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 19,
+                            "durationMicroseconds": 148,
+                            "functionName": "text",
+                            "line": 40,
+                            "message": "Cannot access value for name parentWindow"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 34,
+                            "durationMicroseconds": 121,
+                            "functionName": "horizontalAlignment",
+                            "line": 44,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 120,
+                            "functionName": "alignment",
+                            "line": 45,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 20,
+                            "durationMicroseconds": 0,
+                            "functionName": "value",
+                            "line": 53,
+                            "message": "Could not find property \"value\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 29,
+                            "durationMicroseconds": 0,
+                            "functionName": "onValueChanged",
+                            "line": 55,
+                            "message": "Could not find signal \"valueChanged\"."
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 129,
+                            "functionName": "alignment",
+                            "line": 65,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 24,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 86,
+                            "message": "Could not find signal \"clicked\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 159,
+                            "functionName": "color",
+                            "line": 74,
+                            "message": "Cannot load property pressed from (component in /home/sachin/projects/FogpassUI/content/VolumeControl.qml)::parent with type QQuickItem."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 30,
+                            "durationMicroseconds": 138,
+                            "functionName": "opacity",
+                            "line": 75,
+                            "message": "Cannot load property pressed from (component in /home/sachin/projects/FogpassUI/content/VolumeControl.qml)::parent with type QQuickItem."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 27,
+                            "durationMicroseconds": 105,
+                            "functionName": "text",
+                            "line": 80,
+                            "message": "Cannot load property text from (component in /home/sachin/projects/FogpassUI/content/VolumeControl.qml)::parent with type QQuickItem."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 27,
+                            "durationMicroseconds": 93,
+                            "functionName": "font",
+                            "line": 81,
+                            "message": "Cannot load property font from (component in /home/sachin/projects/FogpassUI/content/VolumeControl.qml)::parent with type QQuickItem."
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 42,
+                            "durationMicroseconds": 128,
+                            "functionName": "horizontalAlignment",
+                            "line": 83,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 40,
+                            "durationMicroseconds": 114,
+                            "functionName": "verticalAlignment",
+                            "line": 84,
+                            "message": ""
+                        }
+                    ],
+                    "filePath": "/home/sachin/projects/FogpassUI/content/VolumeControl.qml"
+                }
+            ],
+            "moduleId": "trial1(apptrial1)"
+        }
+    ]
+}

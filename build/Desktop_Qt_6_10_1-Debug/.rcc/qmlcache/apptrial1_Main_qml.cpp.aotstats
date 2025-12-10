@@ -10,7 +10,7 @@
                             "column": 12,
                             "durationMicroseconds": 0,
                             "functionName": "flags",
-                            "line": 9,
+                            "line": 10,
                             "message": "Could not find property \"flags\"."
                         },
                         {
@@ -18,7 +18,7 @@
                             "column": 12,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 22,
+                            "line": 24,
                             "message": "Could not find property \"color\"."
                         },
                         {
@@ -26,16 +26,48 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 29,
+                            "line": 31,
                             "message": "Could not find property \"fill\"."
                         },
                         {
                             "codegenResult": 2,
                             "column": 32,
-                            "durationMicroseconds": 93,
+                            "durationMicroseconds": 139,
                             "functionName": "onCompleted",
-                            "line": 32,
+                            "line": 34,
                             "message": "Cannot retrieve a non-object type by ID: stackView"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 23,
+                            "durationMicroseconds": 296,
+                            "functionName": "batteryLevel",
+                            "line": 45,
+                            "message": "Cannot access value for name backend"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 22,
+                            "durationMicroseconds": 51,
+                            "functionName": "volumeLevel",
+                            "line": 46,
+                            "message": "Cannot retrieve a non-object type by ID: appWindow"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 22,
+                            "durationMicroseconds": 215,
+                            "functionName": "top",
+                            "line": 41,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 24,
+                            "durationMicroseconds": 160,
+                            "functionName": "right",
+                            "line": 42,
+                            "message": ""
                         }
                     ],
                     "filePath": "/home/sachin/projects/FogpassUI/Main.qml"

@@ -1,0 +1,183 @@
+{
+    "formatRevision": 1,
+    "modules": [
+        {
+            "moduleFiles": [
+                {
+                    "entries": [
+                        {
+                            "codegenResult": 0,
+                            "column": 12,
+                            "durationMicroseconds": 371,
+                            "functionName": "width",
+                            "line": 9,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 13,
+                            "durationMicroseconds": 253,
+                            "functionName": "height",
+                            "line": 10,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 5,
+                            "durationMicroseconds": 364,
+                            "functionName": "stackRef",
+                            "line": 22,
+                            "message": "Cannot load property stack from (component in /home/sachin/projects/FogpassUI/content/ModePlaceholder.qml)::parentWindow with type QVariant."
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 23,
+                            "durationMicroseconds": 114,
+                            "functionName": "fill",
+                            "line": 14,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 16,
+                            "durationMicroseconds": 362,
+                            "functionName": "width",
+                            "line": 29,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 27,
+                            "durationMicroseconds": 99,
+                            "functionName": "centerIn",
+                            "line": 27,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 19,
+                            "durationMicroseconds": 58,
+                            "functionName": "text",
+                            "line": 32,
+                            "message": "Cannot access value for name title"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 34,
+                            "durationMicroseconds": 119,
+                            "functionName": "horizontalAlignment",
+                            "line": 36,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 117,
+                            "functionName": "alignment",
+                            "line": 37,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 19,
+                            "durationMicroseconds": 61,
+                            "functionName": "text",
+                            "line": 41,
+                            "message": "Cannot access value for name title"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 23,
+                            "durationMicroseconds": 114,
+                            "functionName": "wrapMode",
+                            "line": 44,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 34,
+                            "durationMicroseconds": 107,
+                            "functionName": "horizontalAlignment",
+                            "line": 45,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 109,
+                            "functionName": "alignment",
+                            "line": 46,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 112,
+                            "functionName": "alignment",
+                            "line": 50,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 72,
+                            "message": "Could not find signal \"clicked\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 159,
+                            "functionName": "color",
+                            "line": 60,
+                            "message": "Cannot load property pressed from (component in /home/sachin/projects/FogpassUI/content/ModePlaceholder.qml)::parent with type QQuickItem."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 30,
+                            "durationMicroseconds": 124,
+                            "functionName": "opacity",
+                            "line": 61,
+                            "message": "Cannot load property pressed from (component in /home/sachin/projects/FogpassUI/content/ModePlaceholder.qml)::parent with type QQuickItem."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 27,
+                            "durationMicroseconds": 96,
+                            "functionName": "text",
+                            "line": 66,
+                            "message": "Cannot load property text from (component in /home/sachin/projects/FogpassUI/content/ModePlaceholder.qml)::parent with type QQuickItem."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 27,
+                            "durationMicroseconds": 91,
+                            "functionName": "font",
+                            "line": 67,
+                            "message": "Cannot load property font from (component in /home/sachin/projects/FogpassUI/content/ModePlaceholder.qml)::parent with type QQuickItem."
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 42,
+                            "durationMicroseconds": 117,
+                            "functionName": "horizontalAlignment",
+                            "line": 69,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 40,
+                            "durationMicroseconds": 98,
+                            "functionName": "verticalAlignment",
+                            "line": 70,
+                            "message": ""
+                        }
+                    ],
+                    "filePath": "/home/sachin/projects/FogpassUI/content/ModePlaceholder.qml"
+                }
+            ],
+            "moduleId": "trial1(apptrial1)"
+        }
+    ]
+}

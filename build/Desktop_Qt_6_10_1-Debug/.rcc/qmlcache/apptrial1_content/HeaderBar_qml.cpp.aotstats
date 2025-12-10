@@ -1,0 +1,167 @@
+{
+    "formatRevision": 1,
+    "modules": [
+        {
+            "moduleFiles": [
+                {
+                    "entries": [
+                        {
+                            "codegenResult": 0,
+                            "column": 12,
+                            "durationMicroseconds": 412,
+                            "functionName": "width",
+                            "line": 9,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 23,
+                            "durationMicroseconds": 119,
+                            "functionName": "fill",
+                            "line": 14,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 35,
+                            "durationMicroseconds": 102,
+                            "functionName": "fill",
+                            "line": 26,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 45,
+                            "durationMicroseconds": 171,
+                            "functionName": "verticalCenter",
+                            "line": 39,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 36,
+                            "durationMicroseconds": 158,
+                            "functionName": "right",
+                            "line": 40,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 131,
+                            "functionName": "width",
+                            "line": 55,
+                            "message": "Cannot access value for name batteryLevel"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 180,
+                            "functionName": "color",
+                            "line": 57,
+                            "message": "Cannot access value for name batteryLevel"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 178,
+                            "functionName": "left",
+                            "line": 49,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 30,
+                            "durationMicroseconds": 160,
+                            "functionName": "top",
+                            "line": 50,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 33,
+                            "durationMicroseconds": 158,
+                            "functionName": "bottom",
+                            "line": 51,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 23,
+                            "durationMicroseconds": 68,
+                            "functionName": "text",
+                            "line": 63,
+                            "message": "Cannot access value for name batteryLevel"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 41,
+                            "durationMicroseconds": 174,
+                            "functionName": "verticalCenter",
+                            "line": 67,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 30,
+                            "durationMicroseconds": 2660,
+                            "functionName": "onPaint",
+                            "line": 83,
+                            "message": "Cannot access value for name volumeLevel"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 37,
+                            "durationMicroseconds": 124,
+                            "functionName": "onWidthChanged",
+                            "line": 117,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 38,
+                            "durationMicroseconds": 99,
+                            "functionName": "onHeightChanged",
+                            "line": 118,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 35,
+                            "durationMicroseconds": 111,
+                            "functionName": "fill",
+                            "line": 82,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 44,
+                            "durationMicroseconds": 97,
+                            "functionName": "onCompleted",
+                            "line": 116,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 23,
+                            "durationMicroseconds": 78,
+                            "functionName": "text",
+                            "line": 123,
+                            "message": "Cannot access value for name volumeLevel"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 41,
+                            "durationMicroseconds": 192,
+                            "functionName": "verticalCenter",
+                            "line": 127,
+                            "message": ""
+                        }
+                    ],
+                    "filePath": "/home/sachin/projects/FogpassUI/content/HeaderBar.qml"
+                }
+            ],
+            "moduleId": "trial1(apptrial1)"
+        }
+    ]
+}

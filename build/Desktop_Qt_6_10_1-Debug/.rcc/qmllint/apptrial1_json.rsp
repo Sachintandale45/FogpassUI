@@ -20,5 +20,8 @@
 /home/sachin/projects/FogpassUI/content/UserMenu.qml
 /home/sachin/projects/FogpassUI/content/TestMenuPage.qml
 /home/sachin/projects/FogpassUI/content/GPSSimulationPage.qml
+/home/sachin/projects/FogpassUI/content/HeaderBar.qml
+/home/sachin/projects/FogpassUI/content/ModePlaceholder.qml
+/home/sachin/projects/FogpassUI/content/VolumeControl.qml
 --json
 /home/sachin/projects/FogpassUI/build/Desktop_Qt_6_10_1-Debug/apptrial1_qmllint.json

@@ -24,6 +24,12 @@ set(src_and_dest_list
     "/home/sachin/projects/FogpassUI/build/Desktop_Qt_6_10_1-Debug/trial1/content/TestMenuPage.qml"
     "/home/sachin/projects/FogpassUI/content/GPSSimulationPage.qml"
     "/home/sachin/projects/FogpassUI/build/Desktop_Qt_6_10_1-Debug/trial1/content/GPSSimulationPage.qml"
+    "/home/sachin/projects/FogpassUI/content/HeaderBar.qml"
+    "/home/sachin/projects/FogpassUI/build/Desktop_Qt_6_10_1-Debug/trial1/content/HeaderBar.qml"
+    "/home/sachin/projects/FogpassUI/content/ModePlaceholder.qml"
+    "/home/sachin/projects/FogpassUI/build/Desktop_Qt_6_10_1-Debug/trial1/content/ModePlaceholder.qml"
+    "/home/sachin/projects/FogpassUI/content/VolumeControl.qml"
+    "/home/sachin/projects/FogpassUI/build/Desktop_Qt_6_10_1-Debug/trial1/content/VolumeControl.qml"
 
 )
 set(timestamp_file "/home/sachin/projects/FogpassUI/build/Desktop_Qt_6_10_1-Debug/.qt/apptrial1_qml.txt")

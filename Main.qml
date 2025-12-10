@@ -3,6 +3,7 @@ import QtQuick 2.15
 import QtQuick.Window 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.15
+import "content"
 
 ApplicationWindow {
     id: appWindow
@@ -18,6 +19,7 @@ ApplicationWindow {
     property color primaryColor: "#4fc3f7"
     property color textColor: "#ffffff"
     property color mutedTextColor: "#cfcfe0"
+    property int volumeLevel: 75
     // apply window background
     color: bgColor
 
@@ -34,5 +36,13 @@ ApplicationWindow {
             stackView.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/IntroPage.qml"), { parentWindow: appWindow })
         }
     }
-    // (No top-right demo button in final flow)
+
+    HeaderBar {
+        anchors.top: parent.top
+        anchors.right: parent.right
+        anchors.margins: 16
+        z: 2
+        batteryLevel: typeof backend !== 'undefined' ? backend.batteryLevel : 0
+        volumeLevel: appWindow.volumeLevel
+    }
 }

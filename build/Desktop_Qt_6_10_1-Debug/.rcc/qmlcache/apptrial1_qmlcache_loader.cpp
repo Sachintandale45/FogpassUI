@@ -82,6 +82,27 @@ namespace _qt_qml_trial1_content_GPSSimulationPage_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
+namespace _qt_qml_trial1_content_HeaderBar_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_trial1_content_ModePlaceholder_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_trial1_content_VolumeControl_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
 
 }
 namespace {
@@ -107,6 +128,9 @@ Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/trial1/content/UserMenu.qml"), &QmlCacheGeneratedCode::_qt_qml_trial1_content_UserMenu_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/trial1/content/TestMenuPage.qml"), &QmlCacheGeneratedCode::_qt_qml_trial1_content_TestMenuPage_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/trial1/content/GPSSimulationPage.qml"), &QmlCacheGeneratedCode::_qt_qml_trial1_content_GPSSimulationPage_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/trial1/content/HeaderBar.qml"), &QmlCacheGeneratedCode::_qt_qml_trial1_content_HeaderBar_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/trial1/content/ModePlaceholder.qml"), &QmlCacheGeneratedCode::_qt_qml_trial1_content_ModePlaceholder_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/trial1/content/VolumeControl.qml"), &QmlCacheGeneratedCode::_qt_qml_trial1_content_VolumeControl_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

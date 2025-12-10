@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 0,
                             "column": 12,
-                            "durationMicroseconds": 267,
+                            "durationMicroseconds": 356,
                             "functionName": "width",
                             "line": 8,
                             "message": ""
@@ -16,7 +16,7 @@
                         {
                             "codegenResult": 0,
                             "column": 13,
-                            "durationMicroseconds": 152,
+                            "durationMicroseconds": 262,
                             "functionName": "height",
                             "line": 9,
                             "message": ""
@@ -24,41 +24,121 @@
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 63,
+                            "durationMicroseconds": 108,
                             "functionName": "fill",
                             "line": 13,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 30,
-                            "durationMicroseconds": 77,
+                            "column": 16,
+                            "durationMicroseconds": 1451,
+                            "functionName": "width",
+                            "line": 26,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 35,
+                            "durationMicroseconds": 172,
+                            "functionName": "horizontalCenter",
+                            "line": 22,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 22,
+                            "durationMicroseconds": 155,
+                            "functionName": "top",
+                            "line": 23,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 34,
+                            "durationMicroseconds": 115,
                             "functionName": "horizontalAlignment",
-                            "line": 28,
+                            "line": 34,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 28,
-                            "durationMicroseconds": 64,
-                            "functionName": "verticalAlignment",
-                            "line": 29,
+                            "column": 31,
+                            "durationMicroseconds": 1357,
+                            "functionName": "alignment",
+                            "line": 35,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 27,
-                            "durationMicroseconds": 53,
-                            "functionName": "centerIn",
-                            "line": 24,
+                            "column": 34,
+                            "durationMicroseconds": 132,
+                            "functionName": "horizontalAlignment",
+                            "line": 42,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 125,
+                            "functionName": "alignment",
+                            "line": 43,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 34,
+                            "durationMicroseconds": 119,
+                            "functionName": "horizontalAlignment",
+                            "line": 50,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 121,
+                            "functionName": "alignment",
+                            "line": 51,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 34,
+                            "durationMicroseconds": 126,
+                            "functionName": "horizontalAlignment",
+                            "line": 58,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 116,
+                            "functionName": "alignment",
+                            "line": 59,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 34,
+                            "durationMicroseconds": 114,
+                            "functionName": "horizontalAlignment",
+                            "line": 66,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 113,
+                            "functionName": "alignment",
+                            "line": 67,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 22,
-                            "durationMicroseconds": 195,
+                            "durationMicroseconds": 344,
                             "functionName": "onTriggered",
-                            "line": 37,
+                            "line": 76,
                             "message": "Cannot access value for name parentWindow"
                         }
                     ],

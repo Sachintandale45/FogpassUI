@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 0,
                             "column": 12,
-                            "durationMicroseconds": 276,
+                            "durationMicroseconds": 388,
                             "functionName": "width",
                             "line": 7,
                             "message": ""
@@ -16,7 +16,7 @@
                         {
                             "codegenResult": 0,
                             "column": 13,
-                            "durationMicroseconds": 177,
+                            "durationMicroseconds": 269,
                             "functionName": "height",
                             "line": 8,
                             "message": ""
@@ -24,73 +24,73 @@
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 65,
+                            "durationMicroseconds": 161,
                             "functionName": "fill",
-                            "line": 15,
+                            "line": 16,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 16,
-                            "durationMicroseconds": 227,
+                            "durationMicroseconds": 394,
                             "functionName": "width",
-                            "line": 26,
+                            "line": 27,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 27,
-                            "durationMicroseconds": 61,
+                            "durationMicroseconds": 105,
                             "functionName": "centerIn",
-                            "line": 24,
+                            "line": 25,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 19,
-                            "durationMicroseconds": 39,
+                            "durationMicroseconds": 65,
                             "functionName": "text",
-                            "line": 29,
+                            "line": 30,
                             "message": "Cannot access value for name title"
                         },
                         {
                             "codegenResult": 0,
                             "column": 34,
-                            "durationMicroseconds": 75,
+                            "durationMicroseconds": 146,
                             "functionName": "horizontalAlignment",
-                            "line": 32,
+                            "line": 33,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 71,
+                            "durationMicroseconds": 121,
                             "functionName": "alignment",
-                            "line": 33,
+                            "line": 34,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 19,
-                            "durationMicroseconds": 38,
+                            "durationMicroseconds": 63,
                             "functionName": "text",
-                            "line": 37,
+                            "line": 38,
                             "message": "Cannot access value for name title"
                         },
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 70,
+                            "durationMicroseconds": 119,
                             "functionName": "wrapMode",
-                            "line": 39,
+                            "line": 40,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 78,
+                            "durationMicroseconds": 118,
                             "functionName": "alignment",
-                            "line": 43,
+                            "line": 44,
                             "message": ""
                         },
                         {
@@ -98,55 +98,55 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 65,
+                            "line": 66,
                             "message": "Could not find signal \"clicked\"."
                         },
                         {
                             "codegenResult": 2,
                             "column": 28,
-                            "durationMicroseconds": 93,
+                            "durationMicroseconds": 156,
                             "functionName": "color",
-                            "line": 53,
-                            "message": "Cannot load property pressed from (component in /home/sachin/projects/FogpassUI/content/PlaceholderPage.qml)::parent with type QQuickItem."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 30,
-                            "durationMicroseconds": 76,
-                            "functionName": "opacity",
                             "line": 54,
                             "message": "Cannot load property pressed from (component in /home/sachin/projects/FogpassUI/content/PlaceholderPage.qml)::parent with type QQuickItem."
                         },
                         {
                             "codegenResult": 2,
+                            "column": 30,
+                            "durationMicroseconds": 135,
+                            "functionName": "opacity",
+                            "line": 55,
+                            "message": "Cannot load property pressed from (component in /home/sachin/projects/FogpassUI/content/PlaceholderPage.qml)::parent with type QQuickItem."
+                        },
+                        {
+                            "codegenResult": 2,
                             "column": 27,
-                            "durationMicroseconds": 56,
+                            "durationMicroseconds": 102,
                             "functionName": "text",
-                            "line": 59,
+                            "line": 60,
                             "message": "Cannot load property text from (component in /home/sachin/projects/FogpassUI/content/PlaceholderPage.qml)::parent with type QQuickItem."
                         },
                         {
                             "codegenResult": 2,
                             "column": 27,
-                            "durationMicroseconds": 50,
+                            "durationMicroseconds": 90,
                             "functionName": "font",
-                            "line": 60,
+                            "line": 61,
                             "message": "Cannot load property font from (component in /home/sachin/projects/FogpassUI/content/PlaceholderPage.qml)::parent with type QQuickItem."
                         },
                         {
                             "codegenResult": 0,
                             "column": 42,
-                            "durationMicroseconds": 64,
+                            "durationMicroseconds": 127,
                             "functionName": "horizontalAlignment",
-                            "line": 62,
+                            "line": 63,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 40,
-                            "durationMicroseconds": 58,
+                            "durationMicroseconds": 112,
                             "functionName": "verticalAlignment",
-                            "line": 63,
+                            "line": 64,
                             "message": ""
                         }
                     ],

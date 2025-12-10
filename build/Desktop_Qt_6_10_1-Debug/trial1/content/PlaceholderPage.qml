@@ -9,6 +9,7 @@ Item {
 
     property string title: "Placeholder"
     property var parentWindow: null
+    property int volumeLevel: 75
 
     // Beautiful gradient background with mixed colors
     Rectangle {

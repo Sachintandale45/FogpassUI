@@ -25,6 +25,9 @@ QML_FILES content/UserMenu.qml
 SOURCES src/backend/backendmanager.cpp src/backend/backendmanager.h
 QML_FILES content/TestMenuPage.qml
 QML_FILES content/GPSSimulationPage.qml
+QML_FILES content/HeaderBar.qml
+QML_FILES content/ModePlaceholder.qml
+QML_FILES content/VolumeControl.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
