@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 0,
                             "column": 12,
-                            "durationMicroseconds": 374,
+                            "durationMicroseconds": 390,
                             "functionName": "width",
                             "line": 10,
                             "message": ""
@@ -16,7 +16,7 @@
                         {
                             "codegenResult": 0,
                             "column": 13,
-                            "durationMicroseconds": 269,
+                            "durationMicroseconds": 296,
                             "functionName": "height",
                             "line": 11,
                             "message": ""
@@ -24,7 +24,7 @@
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 111,
+                            "durationMicroseconds": 122,
                             "functionName": "fill",
                             "line": 15,
                             "message": ""
@@ -32,7 +32,7 @@
                         {
                             "codegenResult": 2,
                             "column": 23,
-                            "durationMicroseconds": 11359,
+                            "durationMicroseconds": 315,
                             "functionName": "batteryLevel",
                             "line": 27,
                             "message": "Cannot access value for name backend"
@@ -40,7 +40,7 @@
                         {
                             "codegenResult": 0,
                             "column": 22,
-                            "durationMicroseconds": 166,
+                            "durationMicroseconds": 150,
                             "functionName": "volumeLevel",
                             "line": 28,
                             "message": ""
@@ -48,7 +48,7 @@
                         {
                             "codegenResult": 0,
                             "column": 22,
-                            "durationMicroseconds": 161,
+                            "durationMicroseconds": 186,
                             "functionName": "top",
                             "line": 24,
                             "message": ""
@@ -56,7 +56,7 @@
                         {
                             "codegenResult": 0,
                             "column": 24,
-                            "durationMicroseconds": 145,
+                            "durationMicroseconds": 168,
                             "functionName": "right",
                             "line": 25,
                             "message": ""
@@ -64,7 +64,7 @@
                         {
                             "codegenResult": 0,
                             "column": 22,
-                            "durationMicroseconds": 163,
+                            "durationMicroseconds": 178,
                             "functionName": "top",
                             "line": 32,
                             "message": ""
@@ -72,7 +72,7 @@
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 144,
+                            "durationMicroseconds": 167,
                             "functionName": "left",
                             "line": 33,
                             "message": ""
@@ -80,7 +80,7 @@
                         {
                             "codegenResult": 0,
                             "column": 24,
-                            "durationMicroseconds": 141,
+                            "durationMicroseconds": 165,
                             "functionName": "right",
                             "line": 34,
                             "message": ""
@@ -88,7 +88,7 @@
                         {
                             "codegenResult": 0,
                             "column": 34,
-                            "durationMicroseconds": 119,
+                            "durationMicroseconds": 139,
                             "functionName": "horizontalAlignment",
                             "line": 44,
                             "message": ""
@@ -96,7 +96,7 @@
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 113,
+                            "durationMicroseconds": 129,
                             "functionName": "alignment",
                             "line": 45,
                             "message": ""
@@ -104,10 +104,10 @@
                         {
                             "codegenResult": 2,
                             "column": 13,
-                            "durationMicroseconds": 504,
+                            "durationMicroseconds": 574,
                             "functionName": "stackRef",
                             "line": 52,
-                            "message": "Cannot access value for name StackView"
+                            "message": "Cannot access value for name parentWindow"
                         },
                         {
                             "codegenResult": 2,
@@ -120,10 +120,10 @@
                         {
                             "codegenResult": 2,
                             "column": 13,
-                            "durationMicroseconds": 456,
+                            "durationMicroseconds": 927,
                             "functionName": "goVolume",
                             "line": 65,
-                            "message": "Cannot access value for name StackView"
+                            "message": "Cannot generate efficient code for call to untyped JavaScript function"
                         },
                         {
                             "codegenResult": 2,
@@ -136,7 +136,7 @@
                         {
                             "codegenResult": 0,
                             "column": 151,
-                            "durationMicroseconds": 7206,
+                            "durationMicroseconds": 161,
                             "functionName": "alignment",
                             "line": 72,
                             "message": ""
@@ -144,7 +144,7 @@
                         {
                             "codegenResult": 2,
                             "column": 59,
-                            "durationMicroseconds": 159,
+                            "durationMicroseconds": 158,
                             "functionName": "color",
                             "line": 73,
                             "message": "Cannot load property pressed from (component in /home/sachin/projects/FogpassUI/content/UserMenu.qml)::parent with type QQuickItem."
@@ -152,7 +152,7 @@
                         {
                             "codegenResult": 2,
                             "column": 108,
-                            "durationMicroseconds": 128,
+                            "durationMicroseconds": 135,
                             "functionName": "opacity",
                             "line": 73,
                             "message": "Cannot load property pressed from (component in /home/sachin/projects/FogpassUI/content/UserMenu.qml)::parent with type QQuickItem."
@@ -160,7 +160,7 @@
                         {
                             "codegenResult": 2,
                             "column": 43,
-                            "durationMicroseconds": 108,
+                            "durationMicroseconds": 114,
                             "functionName": "text",
                             "line": 74,
                             "message": "Cannot load property text from (component in /home/sachin/projects/FogpassUI/content/UserMenu.qml)::parent with type QQuickItem."
@@ -168,7 +168,7 @@
                         {
                             "codegenResult": 2,
                             "column": 62,
-                            "durationMicroseconds": 93,
+                            "durationMicroseconds": 112,
                             "functionName": "font",
                             "line": 74,
                             "message": "Cannot load property font from (component in /home/sachin/projects/FogpassUI/content/UserMenu.qml)::parent with type QQuickItem."
@@ -176,7 +176,7 @@
                         {
                             "codegenResult": 0,
                             "column": 114,
-                            "durationMicroseconds": 133,
+                            "durationMicroseconds": 140,
                             "functionName": "horizontalAlignment",
                             "line": 74,
                             "message": ""
@@ -184,7 +184,7 @@
                         {
                             "codegenResult": 0,
                             "column": 149,
-                            "durationMicroseconds": 107,
+                            "durationMicroseconds": 128,
                             "functionName": "verticalAlignment",
                             "line": 74,
                             "message": ""
@@ -192,7 +192,7 @@
                         {
                             "codegenResult": 0,
                             "column": 182,
-                            "durationMicroseconds": 152,
+                            "durationMicroseconds": 181,
                             "functionName": "left",
                             "line": 74,
                             "message": ""
@@ -208,7 +208,7 @@
                         {
                             "codegenResult": 0,
                             "column": 153,
-                            "durationMicroseconds": 144,
+                            "durationMicroseconds": 148,
                             "functionName": "alignment",
                             "line": 77,
                             "message": ""
@@ -216,7 +216,7 @@
                         {
                             "codegenResult": 2,
                             "column": 59,
-                            "durationMicroseconds": 144,
+                            "durationMicroseconds": 165,
                             "functionName": "color",
                             "line": 78,
                             "message": "Cannot load property pressed from (component in /home/sachin/projects/FogpassUI/content/UserMenu.qml)::parent with type QQuickItem."
@@ -224,7 +224,7 @@
                         {
                             "codegenResult": 2,
                             "column": 108,
-                            "durationMicroseconds": 118,
+                            "durationMicroseconds": 131,
                             "functionName": "opacity",
                             "line": 78,
                             "message": "Cannot load property pressed from (component in /home/sachin/projects/FogpassUI/content/UserMenu.qml)::parent with type QQuickItem."
@@ -232,7 +232,7 @@
                         {
                             "codegenResult": 2,
                             "column": 43,
-                            "durationMicroseconds": 106,
+                            "durationMicroseconds": 113,
                             "functionName": "text",
                             "line": 79,
                             "message": "Cannot load property text from (component in /home/sachin/projects/FogpassUI/content/UserMenu.qml)::parent with type QQuickItem."
@@ -240,7 +240,7 @@
                         {
                             "codegenResult": 2,
                             "column": 62,
-                            "durationMicroseconds": 94,
+                            "durationMicroseconds": 102,
                             "functionName": "font",
                             "line": 79,
                             "message": "Cannot load property font from (component in /home/sachin/projects/FogpassUI/content/UserMenu.qml)::parent with type QQuickItem."
@@ -248,7 +248,7 @@
                         {
                             "codegenResult": 0,
                             "column": 114,
-                            "durationMicroseconds": 122,
+                            "durationMicroseconds": 139,
                             "functionName": "horizontalAlignment",
                             "line": 79,
                             "message": ""
@@ -256,7 +256,7 @@
                         {
                             "codegenResult": 0,
                             "column": 149,
-                            "durationMicroseconds": 111,
+                            "durationMicroseconds": 124,
                             "functionName": "verticalAlignment",
                             "line": 79,
                             "message": ""
@@ -264,7 +264,7 @@
                         {
                             "codegenResult": 0,
                             "column": 182,
-                            "durationMicroseconds": 151,
+                            "durationMicroseconds": 183,
                             "functionName": "left",
                             "line": 79,
                             "message": ""
@@ -280,7 +280,7 @@
                         {
                             "codegenResult": 0,
                             "column": 154,
-                            "durationMicroseconds": 141,
+                            "durationMicroseconds": 152,
                             "functionName": "alignment",
                             "line": 82,
                             "message": ""
@@ -288,7 +288,7 @@
                         {
                             "codegenResult": 2,
                             "column": 59,
-                            "durationMicroseconds": 139,
+                            "durationMicroseconds": 157,
                             "functionName": "color",
                             "line": 83,
                             "message": "Cannot load property pressed from (component in /home/sachin/projects/FogpassUI/content/UserMenu.qml)::parent with type QQuickItem."
@@ -296,7 +296,7 @@
                         {
                             "codegenResult": 2,
                             "column": 108,
-                            "durationMicroseconds": 115,
+                            "durationMicroseconds": 130,
                             "functionName": "opacity",
                             "line": 83,
                             "message": "Cannot load property pressed from (component in /home/sachin/projects/FogpassUI/content/UserMenu.qml)::parent with type QQuickItem."
@@ -304,7 +304,7 @@
                         {
                             "codegenResult": 2,
                             "column": 43,
-                            "durationMicroseconds": 98,
+                            "durationMicroseconds": 114,
                             "functionName": "text",
                             "line": 84,
                             "message": "Cannot load property text from (component in /home/sachin/projects/FogpassUI/content/UserMenu.qml)::parent with type QQuickItem."
@@ -312,7 +312,7 @@
                         {
                             "codegenResult": 2,
                             "column": 62,
-                            "durationMicroseconds": 88,
+                            "durationMicroseconds": 103,
                             "functionName": "font",
                             "line": 84,
                             "message": "Cannot load property font from (component in /home/sachin/projects/FogpassUI/content/UserMenu.qml)::parent with type QQuickItem."
@@ -320,7 +320,7 @@
                         {
                             "codegenResult": 0,
                             "column": 114,
-                            "durationMicroseconds": 119,
+                            "durationMicroseconds": 138,
                             "functionName": "horizontalAlignment",
                             "line": 84,
                             "message": ""
@@ -328,7 +328,7 @@
                         {
                             "codegenResult": 0,
                             "column": 149,
-                            "durationMicroseconds": 7177,
+                            "durationMicroseconds": 127,
                             "functionName": "verticalAlignment",
                             "line": 84,
                             "message": ""
@@ -336,7 +336,7 @@
                         {
                             "codegenResult": 0,
                             "column": 182,
-                            "durationMicroseconds": 188,
+                            "durationMicroseconds": 181,
                             "functionName": "left",
                             "line": 84,
                             "message": ""
@@ -352,7 +352,7 @@
                         {
                             "codegenResult": 0,
                             "column": 155,
-                            "durationMicroseconds": 138,
+                            "durationMicroseconds": 154,
                             "functionName": "alignment",
                             "line": 87,
                             "message": ""
@@ -360,7 +360,7 @@
                         {
                             "codegenResult": 2,
                             "column": 59,
-                            "durationMicroseconds": 151,
+                            "durationMicroseconds": 163,
                             "functionName": "color",
                             "line": 88,
                             "message": "Cannot load property pressed from (component in /home/sachin/projects/FogpassUI/content/UserMenu.qml)::parent with type QQuickItem."
@@ -368,7 +368,7 @@
                         {
                             "codegenResult": 2,
                             "column": 108,
-                            "durationMicroseconds": 134,
+                            "durationMicroseconds": 137,
                             "functionName": "opacity",
                             "line": 88,
                             "message": "Cannot load property pressed from (component in /home/sachin/projects/FogpassUI/content/UserMenu.qml)::parent with type QQuickItem."
@@ -376,7 +376,7 @@
                         {
                             "codegenResult": 2,
                             "column": 43,
-                            "durationMicroseconds": 103,
+                            "durationMicroseconds": 118,
                             "functionName": "text",
                             "line": 89,
                             "message": "Cannot load property text from (component in /home/sachin/projects/FogpassUI/content/UserMenu.qml)::parent with type QQuickItem."
@@ -384,7 +384,7 @@
                         {
                             "codegenResult": 2,
                             "column": 62,
-                            "durationMicroseconds": 89,
+                            "durationMicroseconds": 117,
                             "functionName": "font",
                             "line": 89,
                             "message": "Cannot load property font from (component in /home/sachin/projects/FogpassUI/content/UserMenu.qml)::parent with type QQuickItem."
@@ -392,7 +392,7 @@
                         {
                             "codegenResult": 0,
                             "column": 114,
-                            "durationMicroseconds": 123,
+                            "durationMicroseconds": 141,
                             "functionName": "horizontalAlignment",
                             "line": 89,
                             "message": ""
@@ -400,7 +400,7 @@
                         {
                             "codegenResult": 0,
                             "column": 149,
-                            "durationMicroseconds": 108,
+                            "durationMicroseconds": 128,
                             "functionName": "verticalAlignment",
                             "line": 89,
                             "message": ""
@@ -408,7 +408,7 @@
                         {
                             "codegenResult": 0,
                             "column": 182,
-                            "durationMicroseconds": 166,
+                            "durationMicroseconds": 183,
                             "functionName": "left",
                             "line": 89,
                             "message": ""
@@ -424,7 +424,7 @@
                         {
                             "codegenResult": 0,
                             "column": 159,
-                            "durationMicroseconds": 136,
+                            "durationMicroseconds": 284,
                             "functionName": "alignment",
                             "line": 92,
                             "message": ""
@@ -432,7 +432,7 @@
                         {
                             "codegenResult": 2,
                             "column": 59,
-                            "durationMicroseconds": 147,
+                            "durationMicroseconds": 161,
                             "functionName": "color",
                             "line": 93,
                             "message": "Cannot load property pressed from (component in /home/sachin/projects/FogpassUI/content/UserMenu.qml)::parent with type QQuickItem."
@@ -440,7 +440,7 @@
                         {
                             "codegenResult": 2,
                             "column": 108,
-                            "durationMicroseconds": 118,
+                            "durationMicroseconds": 134,
                             "functionName": "opacity",
                             "line": 93,
                             "message": "Cannot load property pressed from (component in /home/sachin/projects/FogpassUI/content/UserMenu.qml)::parent with type QQuickItem."
@@ -448,7 +448,7 @@
                         {
                             "codegenResult": 2,
                             "column": 43,
-                            "durationMicroseconds": 7145,
+                            "durationMicroseconds": 120,
                             "functionName": "text",
                             "line": 94,
                             "message": "Cannot load property text from (component in /home/sachin/projects/FogpassUI/content/UserMenu.qml)::parent with type QQuickItem."
@@ -456,7 +456,7 @@
                         {
                             "codegenResult": 2,
                             "column": 62,
-                            "durationMicroseconds": 107,
+                            "durationMicroseconds": 113,
                             "functionName": "font",
                             "line": 94,
                             "message": "Cannot load property font from (component in /home/sachin/projects/FogpassUI/content/UserMenu.qml)::parent with type QQuickItem."
@@ -464,7 +464,7 @@
                         {
                             "codegenResult": 0,
                             "column": 114,
-                            "durationMicroseconds": 129,
+                            "durationMicroseconds": 148,
                             "functionName": "horizontalAlignment",
                             "line": 94,
                             "message": ""
@@ -472,7 +472,7 @@
                         {
                             "codegenResult": 0,
                             "column": 149,
-                            "durationMicroseconds": 110,
+                            "durationMicroseconds": 130,
                             "functionName": "verticalAlignment",
                             "line": 94,
                             "message": ""
@@ -480,7 +480,7 @@
                         {
                             "codegenResult": 0,
                             "column": 182,
-                            "durationMicroseconds": 162,
+                            "durationMicroseconds": 182,
                             "functionName": "left",
                             "line": 94,
                             "message": ""
@@ -496,7 +496,7 @@
                         {
                             "codegenResult": 0,
                             "column": 159,
-                            "durationMicroseconds": 143,
+                            "durationMicroseconds": 152,
                             "functionName": "alignment",
                             "line": 97,
                             "message": ""
@@ -504,7 +504,7 @@
                         {
                             "codegenResult": 2,
                             "column": 59,
-                            "durationMicroseconds": 146,
+                            "durationMicroseconds": 160,
                             "functionName": "color",
                             "line": 98,
                             "message": "Cannot load property pressed from (component in /home/sachin/projects/FogpassUI/content/UserMenu.qml)::parent with type QQuickItem."
@@ -520,7 +520,7 @@
                         {
                             "codegenResult": 2,
                             "column": 43,
-                            "durationMicroseconds": 101,
+                            "durationMicroseconds": 120,
                             "functionName": "text",
                             "line": 99,
                             "message": "Cannot load property text from (component in /home/sachin/projects/FogpassUI/content/UserMenu.qml)::parent with type QQuickItem."
@@ -528,7 +528,7 @@
                         {
                             "codegenResult": 2,
                             "column": 62,
-                            "durationMicroseconds": 88,
+                            "durationMicroseconds": 105,
                             "functionName": "font",
                             "line": 99,
                             "message": "Cannot load property font from (component in /home/sachin/projects/FogpassUI/content/UserMenu.qml)::parent with type QQuickItem."
@@ -536,7 +536,7 @@
                         {
                             "codegenResult": 0,
                             "column": 114,
-                            "durationMicroseconds": 140,
+                            "durationMicroseconds": 162,
                             "functionName": "horizontalAlignment",
                             "line": 99,
                             "message": ""
@@ -544,7 +544,7 @@
                         {
                             "codegenResult": 0,
                             "column": 149,
-                            "durationMicroseconds": 122,
+                            "durationMicroseconds": 127,
                             "functionName": "verticalAlignment",
                             "line": 99,
                             "message": ""
@@ -552,7 +552,7 @@
                         {
                             "codegenResult": 0,
                             "column": 182,
-                            "durationMicroseconds": 163,
+                            "durationMicroseconds": 183,
                             "functionName": "left",
                             "line": 99,
                             "message": ""
@@ -560,7 +560,7 @@
                         {
                             "codegenResult": 0,
                             "column": 39,
-                            "durationMicroseconds": 121,
+                            "durationMicroseconds": 141,
                             "functionName": "alignment",
                             "line": 106,
                             "message": ""
@@ -576,7 +576,7 @@
                         {
                             "codegenResult": 2,
                             "column": 28,
-                            "durationMicroseconds": 8769,
+                            "durationMicroseconds": 168,
                             "functionName": "color",
                             "line": 115,
                             "message": "Cannot load property pressed from (component in /home/sachin/projects/FogpassUI/content/UserMenu.qml)::parent with type QQuickItem."
@@ -584,7 +584,7 @@
                         {
                             "codegenResult": 2,
                             "column": 30,
-                            "durationMicroseconds": 135,
+                            "durationMicroseconds": 134,
                             "functionName": "opacity",
                             "line": 116,
                             "message": "Cannot load property pressed from (component in /home/sachin/projects/FogpassUI/content/UserMenu.qml)::parent with type QQuickItem."
@@ -592,7 +592,7 @@
                         {
                             "codegenResult": 2,
                             "column": 27,
-                            "durationMicroseconds": 107,
+                            "durationMicroseconds": 118,
                             "functionName": "text",
                             "line": 121,
                             "message": "Cannot load property text from (component in /home/sachin/projects/FogpassUI/content/UserMenu.qml)::parent with type QQuickItem."
@@ -600,7 +600,7 @@
                         {
                             "codegenResult": 2,
                             "column": 27,
-                            "durationMicroseconds": 91,
+                            "durationMicroseconds": 103,
                             "functionName": "font",
                             "line": 122,
                             "message": "Cannot load property font from (component in /home/sachin/projects/FogpassUI/content/UserMenu.qml)::parent with type QQuickItem."
@@ -608,7 +608,7 @@
                         {
                             "codegenResult": 0,
                             "column": 42,
-                            "durationMicroseconds": 140,
+                            "durationMicroseconds": 159,
                             "functionName": "horizontalAlignment",
                             "line": 124,
                             "message": ""
@@ -616,7 +616,7 @@
                         {
                             "codegenResult": 0,
                             "column": 40,
-                            "durationMicroseconds": 110,
+                            "durationMicroseconds": 127,
                             "functionName": "verticalAlignment",
                             "line": 125,
                             "message": ""

@@ -50,7 +50,7 @@ Item {
             Layout.fillWidth: true
 
             function stackRef() {
-                var s = StackView.view || (parentWindow && parentWindow.stack);
+                var s = (parentWindow && parentWindow.stack) || StackView.view;
                 if (!s) console.warn("UserMenu: no stack available");
                 return s;
             }
@@ -58,14 +58,14 @@ Item {
             function go(title) {
                 var s = stackRef();
                 if (s) {
-                    s.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/ModePlaceholder.qml"), { parentWindow: StackView.view || parentWindow, title: title })
+                    s.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/ModePlaceholder.qml"), { parentWindow: root.parentWindow, title: title })
                 }
             }
 
             function goVolume() {
                 var s = stackRef();
                 if (s) {
-                    s.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/VolumeControl.qml"), { parentWindow: StackView.view || parentWindow })
+                    s.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/VolumeControl.qml"), { parentWindow: root.parentWindow })
                 }
             }
 
@@ -124,7 +124,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                 }
-                onClicked: { var s = StackView.view || (parentWindow && parentWindow.stack); if (s) s.pop(); else console.warn("UserMenu: no stack on back"); }
+                onClicked: { var s = (parentWindow && parentWindow.stack) || StackView.view; if (s) s.pop(); else console.warn("UserMenu: no stack on back"); }
             }
         }
     }

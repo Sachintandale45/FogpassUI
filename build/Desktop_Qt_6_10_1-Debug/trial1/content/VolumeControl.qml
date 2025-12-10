@@ -18,7 +18,9 @@ Item {
     }
 
     function stackRef() {
-        return (parentWindow && parentWindow.stack) ? parentWindow.stack : StackView.view;
+        var s = (parentWindow && parentWindow.stack) || StackView.view;
+        if (!s) console.warn("VolumeControl: no stack available");
+        return s;
     }
 
     ColumnLayout {
@@ -83,7 +85,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                 }
-            onClicked: { var s = stackRef(); if (s) s.pop(); }
+            onClicked: { var s = stackRef(); if (s) s.pop(); else console.warn("VolumeControl: no stack on back"); }
             }
         }
     }

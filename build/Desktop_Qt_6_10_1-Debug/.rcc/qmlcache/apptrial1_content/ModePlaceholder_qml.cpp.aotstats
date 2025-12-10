@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 0,
                             "column": 12,
-                            "durationMicroseconds": 371,
+                            "durationMicroseconds": 415,
                             "functionName": "width",
                             "line": 9,
                             "message": ""
@@ -16,7 +16,7 @@
                         {
                             "codegenResult": 0,
                             "column": 13,
-                            "durationMicroseconds": 253,
+                            "durationMicroseconds": 279,
                             "functionName": "height",
                             "line": 10,
                             "message": ""
@@ -24,7 +24,7 @@
                         {
                             "codegenResult": 2,
                             "column": 5,
-                            "durationMicroseconds": 364,
+                            "durationMicroseconds": 446,
                             "functionName": "stackRef",
                             "line": 22,
                             "message": "Cannot load property stack from (component in /home/sachin/projects/FogpassUI/content/ModePlaceholder.qml)::parentWindow with type QVariant."
@@ -32,7 +32,7 @@
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 114,
+                            "durationMicroseconds": 125,
                             "functionName": "fill",
                             "line": 14,
                             "message": ""
@@ -40,81 +40,81 @@
                         {
                             "codegenResult": 0,
                             "column": 16,
-                            "durationMicroseconds": 362,
+                            "durationMicroseconds": 395,
                             "functionName": "width",
-                            "line": 29,
+                            "line": 31,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 27,
-                            "durationMicroseconds": 99,
+                            "durationMicroseconds": 112,
                             "functionName": "centerIn",
-                            "line": 27,
+                            "line": 29,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 19,
-                            "durationMicroseconds": 58,
+                            "durationMicroseconds": 62,
                             "functionName": "text",
-                            "line": 32,
+                            "line": 34,
                             "message": "Cannot access value for name title"
                         },
                         {
                             "codegenResult": 0,
                             "column": 34,
-                            "durationMicroseconds": 119,
+                            "durationMicroseconds": 141,
                             "functionName": "horizontalAlignment",
-                            "line": 36,
+                            "line": 38,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 117,
+                            "durationMicroseconds": 134,
                             "functionName": "alignment",
-                            "line": 37,
+                            "line": 39,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 19,
-                            "durationMicroseconds": 61,
+                            "durationMicroseconds": 67,
                             "functionName": "text",
-                            "line": 41,
+                            "line": 43,
                             "message": "Cannot access value for name title"
                         },
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 114,
+                            "durationMicroseconds": 129,
                             "functionName": "wrapMode",
-                            "line": 44,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 34,
-                            "durationMicroseconds": 107,
-                            "functionName": "horizontalAlignment",
-                            "line": 45,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 31,
-                            "durationMicroseconds": 109,
-                            "functionName": "alignment",
                             "line": 46,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
+                            "column": 34,
+                            "durationMicroseconds": 120,
+                            "functionName": "horizontalAlignment",
+                            "line": 47,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 112,
+                            "durationMicroseconds": 130,
                             "functionName": "alignment",
-                            "line": 50,
+                            "line": 48,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 132,
+                            "functionName": "alignment",
+                            "line": 52,
                             "message": ""
                         },
                         {
@@ -122,55 +122,55 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 72,
+                            "line": 74,
                             "message": "Could not find signal \"clicked\"."
                         },
                         {
                             "codegenResult": 2,
                             "column": 28,
-                            "durationMicroseconds": 159,
+                            "durationMicroseconds": 163,
                             "functionName": "color",
-                            "line": 60,
+                            "line": 62,
                             "message": "Cannot load property pressed from (component in /home/sachin/projects/FogpassUI/content/ModePlaceholder.qml)::parent with type QQuickItem."
                         },
                         {
                             "codegenResult": 2,
                             "column": 30,
-                            "durationMicroseconds": 124,
+                            "durationMicroseconds": 132,
                             "functionName": "opacity",
-                            "line": 61,
+                            "line": 63,
                             "message": "Cannot load property pressed from (component in /home/sachin/projects/FogpassUI/content/ModePlaceholder.qml)::parent with type QQuickItem."
                         },
                         {
                             "codegenResult": 2,
                             "column": 27,
-                            "durationMicroseconds": 96,
+                            "durationMicroseconds": 113,
                             "functionName": "text",
-                            "line": 66,
+                            "line": 68,
                             "message": "Cannot load property text from (component in /home/sachin/projects/FogpassUI/content/ModePlaceholder.qml)::parent with type QQuickItem."
                         },
                         {
                             "codegenResult": 2,
                             "column": 27,
-                            "durationMicroseconds": 91,
+                            "durationMicroseconds": 100,
                             "functionName": "font",
-                            "line": 67,
+                            "line": 69,
                             "message": "Cannot load property font from (component in /home/sachin/projects/FogpassUI/content/ModePlaceholder.qml)::parent with type QQuickItem."
                         },
                         {
                             "codegenResult": 0,
                             "column": 42,
-                            "durationMicroseconds": 117,
+                            "durationMicroseconds": 138,
                             "functionName": "horizontalAlignment",
-                            "line": 69,
+                            "line": 71,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 40,
-                            "durationMicroseconds": 98,
+                            "durationMicroseconds": 130,
                             "functionName": "verticalAlignment",
-                            "line": 70,
+                            "line": 72,
                             "message": ""
                         }
                     ],

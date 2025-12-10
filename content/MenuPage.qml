@@ -9,7 +9,7 @@ Item {
     height: parent ? parent.height : 600
 
     function stackRef() {
-        var s = StackView.view || (parentWindow && parentWindow.stack);
+        var s = (parentWindow && parentWindow.stack) || StackView.view;
         if (!s) console.warn("MenuPage: no stack available for navigation");
         return s;
     }
@@ -59,7 +59,7 @@ Item {
             }
             onClicked: {
                 var s = root.stackRef();
-                if (s) s.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/UserMenu.qml"), { parentWindow: StackView.view || parentWindow });
+                if (s) s.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/UserMenu.qml"), { parentWindow: root.parentWindow });
             }
         }
         Button { 
@@ -84,7 +84,7 @@ Item {
             }
             onClicked: {
                 var s = root.stackRef();
-                if (s) s.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/TestMenuPage.qml"), { parentWindow: StackView.view || parentWindow });
+                if (s) s.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/TestMenuPage.qml"), { parentWindow: root.parentWindow });
             }
         }
         Button { 
@@ -109,7 +109,7 @@ Item {
             }
             onClicked: {
                 var s = root.stackRef();
-                if (s) s.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/PlaceholderPage.qml"), { title: "USB Menu", parentWindow: StackView.view || parentWindow });
+                if (s) s.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/PlaceholderPage.qml"), { title: "USB Menu", parentWindow: root.parentWindow });
             }
         }
         Button { 
@@ -134,7 +134,7 @@ Item {
             }
             onClicked: {
                 var s = root.stackRef();
-                if (s) s.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/GPSSimulationPage.qml"), { parentWindow: StackView.view || parentWindow });
+                if (s) s.push(Qt.resolvedUrl("qrc:/qt/qml/trial1/content/GPSSimulationPage.qml"), { parentWindow: root.parentWindow });
             }
         }
 

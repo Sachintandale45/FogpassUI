@@ -25,13 +25,13 @@ Item {
         spacing: 10
         width: parent ? parent.width * 0.8 : 640
 
-        Text {
+    Text {
             id: titleText
             text: "FOGPASS & Neuromotion Systems"
-            font.pointSize: 36
-            font.bold: true
+        font.pointSize: 36
+        font.bold: true
             color: "#ffffff"
-            horizontalAlignment: Text.AlignHCenter
+        horizontalAlignment: Text.AlignHCenter
             Layout.alignment: Qt.AlignHCenter
         }
 
