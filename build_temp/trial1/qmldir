@@ -1,0 +1,13 @@
+module trial1
+typeinfo apptrial1.qmltypes
+prefer :/qt/qml/trial1/
+Main 254.0 Main.qml
+DemoPage 254.0 content/DemoPage.qml
+WelcomePage 254.0 content/WelcomePage.qml
+PlaceholderPage 254.0 content/PlaceholderPage.qml
+SplashPage 254.0 content/SplashPage.qml
+WelcomePage 254.0 content/WelcomePage.qml
+MenuPage 254.0 content/MenuPage.qml
+IntroPage 254.0 content/IntroPage.qml
+UserMenu 254.0 content/UserMenu.qml
+
